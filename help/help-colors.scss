@@ -1,0 +1,71 @@
+@import "../_layouts/EMSPortal/theme/sass/emspeed/emspeed-colors";
+
+
+@mixin color-box($color, $sass-name){
+	div {
+		width:25px;
+		height:25px;
+		background-color: $color;
+	}
+	.color-name:after {
+		content: "#{$color}"
+	}
+
+	.sass-name:after {
+		content: "#{$sass-name}";
+	}
+}
+
+body {
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 0.78em;
+}
+
+
+.color-emspeed-blue{ 
+	@include color-box($color-emspeed-blue, "$color-emspeed-blue");
+}
+
+.color-emspeed-light-blue {
+	@include color-box($color-emspeed-light-blue, "$color-emspeed-light-blue");
+}
+
+.color-emspeed-project-header-border{
+	@include color-box($color-emspeed-project-header-border, "$color-emspeed-project-header-border");
+}
+
+.color-emspeed-project-header-top{
+	@include color-box($color-emspeed-project-header-top, "$color-emspeed-project-header-top");
+}
+
+.color-emspeed-project-header-bottom{
+	@include color-box($color-emspeed-project-header-bottom, "$color-emspeed-project-header-bottom");
+}
+
+.color-emspeed-left-menu-bg{
+	@include color-box($color-emspeed-left-menu-bg, "$color-emspeed-left-menu-bg");
+}
+
+.color-emspeed-left-menu-text{
+	@include color-box($color-emspeed-left-menu-text, "$color-emspeed-left-menu-text");
+}
+
+.color-emspeed-left-menu-bg{
+	@include color-box($color-emspeed-left-menu-bg, "$color-emspeed-left-menu-bg");
+}
+
+.color-emspeed-left-menu-hover{
+	@include color-box($color-emspeed-left-menu-hover, "$color-emspeed-left-menu-hover");
+}
+
+.color-emspeed-left-menu-active{
+	@include color-box($color-emspeed-left-menu-active, "$color-emspeed-left-menu-active");
+}
+
+.emspeed-menu-border-top{
+	@include color-box($emspeed-menu-border-top, "$emspeed-menu-border-top");
+}
+
+.emspeed-menu-border-bottom{
+	@include color-box($emspeed-menu-border-bottom, "$emspeed-menu-border-bottom");
+}

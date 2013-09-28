@@ -1,0 +1,75 @@
+@import "../../../EMSPortal/theme/sass/emspeed/emspeed-init";
+@import "../../../EMSPortal/theme/sass/emspeed/emspeed-colors";
+@import "../../../EMSPortal/theme/sass/emspeed/emspeed-mixins";
+
+@import "../../../EMSPortal/theme/sass/emspeed/css-reset";
+@import "../../../EMSPortal/theme/sass/emspeed/hint";
+@import "../../../EMSPortal/app/reporting/resources/css/reporting";
+@import "../../../EMSPortal/app/dashboard/resources/css/dashboard";
+@import "../../../EMSPortal/app/dashboard/resources/css/risk-matrix";
+@import "../../../EMSPortal/app/dashboard/resources/css/DashboardPortletDfX";
+@import "../../../EMSPortal/app/project/resources/css/project";
+@import "../../../EMSPortal/app/projectheader/resources/css/projectheader";
+@import "../../../EMSPortal/app/contextcontroller/resources/css/contextcontroller";
+
+
+// tooltip style
+#tooltip{
+	position:absolute;
+	border:1px solid #222;
+    background-color: #222;
+	padding:5px 10px;
+	color:#d7d7d7;
+	display:none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px #999;
+	z-index: 100000;
+}
+
+.interactive {
+	table {
+		width: 100%;
+		border-spacing: 1px;
+		border-collapse: separate;
+
+		td {
+			width: 11%;
+			height: 55px;
+			border: 1px solid #818181;
+			text-align: center;
+			color: #818181;
+			text-transform: uppercase;
+			font-size: 12px;
+			padding:4px;
+
+			@include interactive-bg(#e5e5e5, #d3d3d3, #b5b5b5);
+			
+			&.interactive-have-report {
+				cursor: pointer;
+				@include interactive-bg(#383838, #303030, #222222);
+
+				&:hover {
+					color: #d7d7d7;
+					@include interactive-bg(#a90329, #8f0222, #6d0019);
+				}
+			}
+
+			&.interactive-selected {
+				color: #d7d7d7;
+				@include interactive-bg(#a90329, #8f0222, #6d0019);
+			}
+			
+		}
+
+	}
+
+}
+
+
+
+// temp need to find home for the below css.
+#slb-footer {
+  background-color: #003366;
+  position: relative; }	  
+
+

@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61515A10-1A1F-4B15-A9F6-E739CE40DAD8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SLB.EMSPortal.UITester</RootNamespace>
+    <AssemblyName>SLB.EMSPortal.UITester</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\EMSPortal\ActivitiesSummary.xap" />
+    <Content Include="ClientBin\EMSPortal\LifecyclesAttributesIndex.xap" />
+    <Content Include="ClientBin\EMSPortal\ManageTeam.xap" />
+    <Content Include="ClientBin\EMSPortal\MaturityMetrics.xap" />
+    <Content Include="ClientBin\EMSPortal\NextCDP.xap" />
+    <Content Include="ClientBin\EMSPortal\PMTView.xap" />
+    <Content Include="ClientBin\EMSPortal\RiskMatrix.xap" />
+    <Content Include="ClientBin\EMSPortal\TopRisks.xap" />
+    <Content Include="ClientBin\EMSPortal\Training.xap" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmspeedContent.ascx" />
+    <Content Include="EmspeedIncludes.ascx" />
+    <Content Include="help\colors.html" />
+    <Content Include="help\help-colors.css">
+      <DependentUpon>help-colors.scss</DependentUpon>
+    </Content>
+    <Content Include="interactive\SpecificationByPhysicalArchitecture.html" />
+    <Content Include="interactive\Requirements.html" />
+    <Content Include="interactive\PMT.html" />
+    <Content Include="_layouts\1033\styles\EMSPortal\emspeed-all.css">
+      <DependentUpon>emspeed-all.scss</DependentUpon>
+    </Content>
+    <Content Include="_layouts\EMSPortal\app\app-all.js" />
+    <Content Include="_layouts\EMSPortal\app\feedback\controller\feedbackController.js" />
+    <Content Include="_layouts\EMSPortal\app\feedback\view\feedback.js" />
+    <Content Include="_layouts\EMSPortal\app\feedback\view\feedbackBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\feedback\view\feedbackCommonFieldset.js" />
+    <Content Include="_layouts\EMSPortal\app\feedback\view\feedbackControls.js" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\icon-reload-animated.gif" />
+    <Content Include="_layouts\EMSPortal\app\viewteam\controller\viewteamController.js" />
+    <Content Include="_layouts\EMSPortal\app\viewteam\view\viewteamBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\manageteam\controller\manageteamController.js" />
+    <Content Include="_layouts\EMSPortal\app\manageteam\view\manageteamBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\loadsnapshot\controller\loadsnapshotController.js" />
+    <Content Include="_layouts\EMSPortal\app\loadsnapshot\view\loadsnapshotBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\createsnapshot\controller\createsnapshotController.js" />
+    <Content Include="_layouts\EMSPortal\app\createsnapshot\view\createsnapshotBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\model\dashboardSubProjectsModel.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\store\dashboardSubProjectsStore.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardProperties.js" />
+    <Content Include="_layouts\EMSPortal\app\interactive\controller\interactiveController.js" />
+    <Content Include="_layouts\EMSPortal\app\interactive\view\interactiveBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\pddsummary\controller\pddsummaryController.js" />
+    <Content Include="_layouts\EMSPortal\app\pddsummary\view\pddsummaryBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\icon-hideMenu.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\icon-hideMenuOver.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\icon-showMenu.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\icon-showMenuOver.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\data\projects.jso" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\icon-briefcase.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\icon-notes.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\interactive.png" />
+    <Content Include="_layouts\EMSPortal\common\EmspeedTooltip.js" />
+    <None Include="_layouts\EMSPortal\theme\sass\emspeed\_hint.scss" />
+    <Content Include="_layouts\EMSPortal\app\clonepmt\controller\clonepmtController.js" />
+    <Content Include="_layouts\EMSPortal\app\clonepmt\view\clonepmtBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardCustomEditorFieldYAxis.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardPdCdpDfx.js" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\gear.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\gear_over.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\maximize_screen.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\parent-project.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\button_exe_on_blue_square.png" />
+    <Content Include="sites\97366\Portal.aspx" />
+    <Content Include="sites\97368\Portal.aspx" />
+    <Content Include="sites\97370\Portal.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="_layouts\1033\styles\EMSPortal\border-radius.htc" />
+    <Content Include="_layouts\1033\styles\EMSPortal\EMSGrid.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\EMSMenu.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\EMSPortal.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\ext-emspeed.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\check.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\Loading_Animation.gif" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\questionBlue.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\spinner.gif" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_222222_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\images\x.png" />
+    <Content Include="_layouts\1033\styles\EMSPortal\jquery-ui-1.8.16.custom.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\jquery-ui-1.8.6.custom.css" />
+    <Content Include="_layouts\1033\styles\EMSPortal\Training.css" />
+    <Content Include="_layouts\EMSPortal\app\app.js" />
+    <Content Include="_layouts\EMSPortal\app\baseclass\controller\baseclassController.js" />
+    <Content Include="_layouts\EMSPortal\app\baseclass\view\baseclassApplication.js" />
+    <Content Include="_layouts\EMSPortal\app\baseclass\view\baseclassContainer.js" />
+    <Content Include="_layouts\EMSPortal\app\baseclass\view\baseclassPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\cdp\controller\cdpController.js" />
+    <Content Include="_layouts\EMSPortal\app\cdp\view\cdpBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\controller\contextcontrollerController.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\resources\images\ContextUpArrow.png" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\resources\images\ContextUpArrowOver.png" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\view\contextcontroller.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\view\contextcontrollerBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\view\contextcontrollerHoverButton.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\view\contextcontrollerProjectMenu.js" />
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\view\contextcontrollerUserInfo.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\controller\dashboardController.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletDfX.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletPMT.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboard.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardCustomEditorField.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardPortletBase.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletGetProjectMaturityMetrics.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletKPI.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletPDDCDP.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\dashboardPortletRiskMatrix.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletSubProjects.js" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\view\DashboardPortletTemplate.js" />
+    <Content Include="_layouts\EMSPortal\app\editteamsite\controller\editteamsiteController.js" />
+    <Content Include="_layouts\EMSPortal\app\editteamsite\view\editteamsite.js" />
+    <Content Include="_layouts\EMSPortal\app\editteamsite\view\editteamsiteBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\editteamsite\view\editteamsiteCommonFieldset.js" />
+    <Content Include="_layouts\EMSPortal\app\editteamsite\view\editteamsiteControls.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\controller\myprojectsController.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\model\myprojectsModel.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\resources\css\myprojects.css" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\view\myprojects.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\view\myprojectsBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\view\myprojectsHeaderPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\myprojects\view\myprojectsProgressBar.js" />
+    <Content Include="_layouts\EMSPortal\app\pmtview\controller\pmtviewController.js" />
+    <Content Include="_layouts\EMSPortal\app\pmtview\resources\css\pmtview.css" />
+    <Content Include="_layouts\EMSPortal\app\pmtview\view\pmtview.js" />
+    <Content Include="_layouts\EMSPortal\app\pmtview\view\pmtviewBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\controller\projectheaderController.js" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\dnArrow.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madArrowUnder.gif" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madButton.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madButtonUnder.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madEMSPEED.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madLine.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madLine2.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madLineUnder.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madmenu.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madprojectheading.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madprojectoverallheading.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\madRight.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\minimize.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\solid.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\spinner.jpg" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\images\UpArrow.png" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\view\projectheader.js" />
+    <Content Include="_layouts\EMSPortal\app\projectheader\view\projectheaderBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\project\controller\projectController.js" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\close.gif" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\EMSPEED.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\EMSPEEDLogo.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\EMSPEED_logo.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\group.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\loader.gif" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\menu_collapsed.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\menu_expanded.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\open.gif" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\subscriptions.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\templates.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\tickets.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\cdp.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\menuspacer.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\Report2.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\Snapshot2.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\summarydetail.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\SummaryHeader2.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\summaryheaderMAD.png" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\images\wireframes\tasks.jpg" />
+    <Content Include="_layouts\EMSPortal\app\project\view\EMSPEEDButton.js" />
+    <Content Include="_layouts\EMSPortal\app\project\view\project.js" />
+    <Content Include="_layouts\EMSPortal\app\project\view\projectApplication.js" />
+    <Content Include="_layouts\EMSPortal\app\project\view\projectNavigation.js" />
+    <Content Include="_layouts\EMSPortal\app\project\view\projectSummaryHeaderPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\provision\controller\provisionController.js" />
+    <Content Include="_layouts\EMSPortal\app\provision\view\provision.js" />
+    <Content Include="_layouts\EMSPortal\app\provision\view\provisionBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\provision\view\provisionCommonFieldset.js" />
+    <Content Include="_layouts\EMSPortal\app\provision\view\provisionCreateRequest.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingCdpController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingCdpForPddController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingFiltersController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingInteractiveController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingManagerController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingRawController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\controller\reportingSortsController.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\model\reportingProjectsModel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\model\reportingReportTypesModel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\model\reportingSectionsModel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\ajax-loader.gif" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\black.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\blank.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\blue.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\cdpforpdd.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\cdpsmall.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\checked.gif" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\dn.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\filterempty.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\filternotempty.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\green.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\program.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\project.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\raw_data.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\red.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\sortempty.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\sortnotempty.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\unchecked.gif" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\up.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\images\yellow.png" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0001_report_Types.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0002_detail_Panels.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0003_summary_Panels.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0004_multiSelect.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0005_back_To_Report_Types.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0006_report_Title_Matches_CDP.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0007_configurations_Match.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0008_sections_Configured.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0009_edit_Disabled.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0010_verification_And_Validation_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0011_verification_And_Validation_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0012_dashboard_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0013_dashboard_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0014_corrective_Actions_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0015_corrective_Actions_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0016_DFMEA_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0017_DFMEA_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0018_DFMEA_Recommendations_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0019_DFMEA_Recommendations_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0020_Dfx_Maintainability_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0021_Dfx_Maintainability_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0022_Dfx_Manufacturing_Mtfg_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0023_Dfx_Manufacturing_Mtfg_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0024_Dfx_Manufacturing_Sc_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0025_Dfx_Manufacturing_Sc_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0026_Dfx_Reliability_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0027_Dfx_Reliability_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0028_Opportunity_Analysis_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0029_Opportunity_Analysis_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0030_PFMEA_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0031_PFMEA_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0032_PFMEA_Recommendations_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0033_PFMEA_Recommendations_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0034_PMT_Detail_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0035_PMT_Detail_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0036_PMT_Summary_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0037_PMT_Summary_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0038_PTT_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0039_PTT_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0040_Requirement_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0041_Requirement_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0042_Risk_By_Requirement_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0043_Risk_by_Requirement_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0044_Risk_By_Specification_Sort.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0045_Risk_By_Specification_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0046_Risk_Register_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0047_Risk_Register_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0048_Test_Associations_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0049_Test_Associations_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0050_Validation_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0051_Validation_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0052_Verification_Sorts.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0053_Verification_Filters.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\0054_Recommended_CDP.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\9997_sectionsConfiguredDESC.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\9998_sectionsConfiguredASC.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\9999_OpportunityAnalysisFilter.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\expectedResults.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\testGlobalFilters.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\testIndex.html" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\testIndexFilter.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\testIndexReporting.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testClientUI\testIndexSort.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testCommon\testHelper.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\1.QA-466_Create_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\10.QA-227_Requirement_ID_Management_after_copying_a_requirement_from_other_project.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\2.QA-514_Flagging_Dirty_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\3.QA-230_Revise_Requirement_With_PM_Credentials.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\4.QA-537_Add_New_Requirement_Sub_Type.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\5.QA-539_Associating_Opportunity_Analysis_Item_to_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\6.QA-225_Requirement_ID_Management.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\7.QA-431_Verify_Requirement_Maturity_Index_Calculation.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\8.QA-361_Delete_a_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\9.QA-226_Requirement_ID_Management_After_Deleting_an_Existing_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\QA-234_Trace_Requirement_Change.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\QA-461_Filter_by_Requirement_Sub_Type.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\QA-514_Flagging_Dirty_Requirement.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\QA-538_Delete_a_Sub_Requirement_Type.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\testIndex.html" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testManualStature\testIndex.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0000_GetJamesBondActors.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0100_addTeamMemberRoleToProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0200_cloneProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0300_createPMTClone.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0400_createProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0500_createProjectSnapshot.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0600_getActions.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0700_getCdpIndex.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0800_getChangedProjectIds.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\0900_getCurrentCdp.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1000_getDevices.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1100_getDFMEAActions.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1200_getDfxIndexes.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1300_getFMEAs.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1400_getMetricsSnapshot.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1500_getOpportunityAnalysis.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1600_getPFMEAActions.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1700_getPhysicalArchitectureRiskMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1800_getPhysicalArchitectures.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\1900_getPMTClones.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2000_getProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2100_getProjectSnapshots.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2200_getRequirements.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2300_getRequirementOpportunityAnalysisMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2400_getRequirementValidationTestMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2500_getRisks.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2600_getRiskCorrectiveActionMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2700_getRiskExperimentalTestMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2800_getSpecifications.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\2900_getSpecificationVerificationTestMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\3000_getTests.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\3100_getTestDeviceMappings.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\3200_removeTeamMemberRoleFromProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\3300_renameProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\3400_updateTeamMemberRolesInProject.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\testIndex.html" />
+    <Content Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\testIndex.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\tests\filters\010_multiSelect.t.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\tests\filters\expectedResults.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\tests\filters\testIndex.html" />
+    <Content Include="_layouts\EMSPortal\app\reporting\tests\filters\testIndex.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reporting.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingBaseDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingBaseSummaryPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpCheckColumn.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetConfigurationActions.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetCustomConfigurations.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetGenerateReport.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetGlobalFilters.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetReportSections.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetReportSectionsFiltersColumn.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetReportSectionsSortGroupsColumn.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpFieldsetReportSectionsToolbar.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpForPddDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpForPddFieldsetGenerateReport.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpForPddSummaryPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCdpSummaryPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCommonFieldSet.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingCommonGenerateConfirm.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterBaseClass.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterDate.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterDateRange.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterMultiSelectList.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterNumeric.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterNumericRange.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilters.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingFilterSingleSelectList.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingInteractiveDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingManagerDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingManagerIconBrowser.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingManagerSummaryPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingProgramProjects.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingProgramProjectTreeGrid.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingProgramProjectTreeGridToolbar.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingRawDetailPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingRawFieldsetGenerateReport.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingRawSummaryPanel.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingSortGroup.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingSortGroupField.js" />
+    <Content Include="_layouts\EMSPortal\app\reporting\view\reportingSorts.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\controller\snapshotsController.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\model\snapshotsHistoryModel.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\view\snapshots.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\view\snapshotsBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\view\snapshotsCommonFieldset.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\view\snapshotsCreateSnapshot.js" />
+    <Content Include="_layouts\EMSPortal\app\snapshots\view\snapshotsHistory.js" />
+    <Content Include="_layouts\EMSPortal\app\stature\controller\statureController.js" />
+    <Content Include="_layouts\EMSPortal\app\stature\view\statureBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\tabs\controller\tabsController.js" />
+    <Content Include="_layouts\EMSPortal\app\tabs\resources\css\tabs.css" />
+    <Content Include="_layouts\EMSPortal\app\tabs\view\tabsBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\tasks\controller\tasksController.js" />
+    <Content Include="_layouts\EMSPortal\app\tasks\view\tasksBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\teamsite\controller\teamsiteController.js" />
+    <Content Include="_layouts\EMSPortal\app\teamsite\view\teamsiteBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\team\controller\teamController.js" />
+    <Content Include="_layouts\EMSPortal\app\team\view\teamBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\usersinrole\controller\usersinroleController.js" />
+    <Content Include="_layouts\EMSPortal\app\usersinrole\resources\css\usersinrole.css" />
+    <Content Include="_layouts\EMSPortal\app\usersinrole\view\usersinrole.js" />
+    <Content Include="_layouts\EMSPortal\app\usersinrole\view\usersinroleBasePanel.js" />
+    <Content Include="_layouts\EMSPortal\app\viewport\controller\viewportController.js" />
+    <Content Include="_layouts\EMSPortal\app\viewport\view\viewportCenter.js" />
+    <Content Include="_layouts\EMSPortal\app\viewport\view\viewportNorth.js" />
+    <Content Include="_layouts\EMSPortal\app\viewport\view\viewportSouth.js" />
+    <Content Include="_layouts\EMSPortal\common\com.js" />
+    <Content Include="_layouts\EMSPortal\common\error.js" />
+    <Content Include="_layouts\EMSPortal\common\jQuery\jquery.mockjax.js" />
+    <Content Include="_layouts\EMSPortal\common\knockout\knockout-2.3.0.js" />
+    <Content Include="_layouts\EMSPortal\common\MenuHider.js" />
+    <Content Include="_layouts\EMSPortal\common\mock.js" />
+    <Content Include="_layouts\EMSPortal\common\NavigationContext.js" />
+    <Content Include="_layouts\EMSPortal\common\Notification.js" />
+    <Content Include="_layouts\EMSPortal\common\portal\portal.css" />
+    <Content Include="_layouts\EMSPortal\common\portal\PortalColumn.js" />
+    <Content Include="_layouts\EMSPortal\common\portal\PortalDropZone.js" />
+    <Content Include="_layouts\EMSPortal\common\portal\PortalPanel.js" />
+    <Content Include="_layouts\EMSPortal\common\portal\Portlet.js" />
+    <Content Include="_layouts\EMSPortal\common\proxy\emspeedProxy.js" />
+    <Content Include="_layouts\EMSPortal\common\proxy\memoryProxy.js" />
+    <Content Include="_layouts\EMSPortal\common\proxy\soapProxy.js" />
+    <Content Include="_layouts\EMSPortal\common\simpleIframe.js" />
+    <Content Include="_layouts\EMSPortal\common\SmartLegend\Legend.js" />
+    <Content Include="_layouts\EMSPortal\common\SmartLegend\LegendItem.js" />
+    <Content Include="_layouts\EMSPortal\common\SmartLegend\SmartLegend.js" />
+    <Content Include="_layouts\EMSPortal\common\SmartLegend\SmartLegendItem.js" />
+    <Content Include="_layouts\EMSPortal\common\soap\Proxy.js" />
+    <Content Include="_layouts\EMSPortal\common\soap\Reader.js" />
+    <Content Include="_layouts\EMSPortal\common\StatusBar.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\form\SearchField.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\css\GridFilters.css" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\css\RangeMenu.css" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\FiltersFeature.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\BooleanFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\DateFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\DateTimeFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\Filter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\ListFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\NumericFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\filter\StringFilter.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\images\equals.png" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\images\find.png" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\images\greater_than.png" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\images\less_than.png" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\menu\ListMenu.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\menu\RangeMenu.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\grid\TransformGrid.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\LiveSearchGridPanel.js" />
+    <Content Include="_layouts\EMSPortal\common\ux\statusbar\StatusBar.js" />
+    <Content Include="_layouts\EMSPortal\common\jQuery\json2.js" />
+    <Content Include="_layouts\EMSPortal\common\jQuery\jquery-1.9.1.js" />
+    <Content Include="_layouts\EMSPortal\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="_layouts\EMSPortal\jquery.tmpl.min.js" />
+    <Content Include="_layouts\EMSPortal\json2.js" />
+    <Content Include="_layouts\EMSPortal\manage-team.js" />
+    <Content Include="_layouts\EMSPortal\theme\images\button\EMSPEED-small-arrow.png" />
+    <Content Include="_layouts\images\EMSPortal\Activities_Summary.jpg" />
+    <Content Include="_layouts\images\EMSPortal\ajax-loader-arrows.gif" />
+    <Content Include="_layouts\images\EMSPortal\anim.gif" />
+    <Content Include="_layouts\images\EMSPortal\animated_favicon1.gif" />
+    <Content Include="_layouts\images\EMSPortal\button_add.png" />
+    <Content Include="_layouts\images\EMSPortal\button_browse.png" />
+    <Content Include="_layouts\images\EMSPortal\button_cancel.png" />
+    <Content Include="_layouts\images\EMSPortal\button_create.png" />
+    <Content Include="_layouts\images\EMSPortal\button_disabled_add.png" />
+    <Content Include="_layouts\images\EMSPortal\button_disabled_ok.png" />
+    <Content Include="_layouts\images\EMSPortal\button_ok.png" />
+    <Content Include="_layouts\images\EMSPortal\button_remove.png" />
+    <Content Include="_layouts\images\EMSPortal\button_save.png" />
+    <Content Include="_layouts\images\EMSPortal\button_submit.png" />
+    <Content Include="_layouts\images\EMSPortal\EMSPEED_logo.jpg" />
+    <Content Include="_layouts\images\EMSPortal\EMSPEED_logo.png" />
+    <Content Include="_layouts\images\EMSPortal\favicon.ico" />
+    <Content Include="_layouts\images\EMSPortal\icon-clonePmt.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-dfx.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-fullscreen.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-gear.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-home.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-navigator.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-pddClms.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-pddSummary.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-pmt.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-reporting.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-snapshots.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-ManageTeam.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-teamSite.png" />
+    <Content Include="_layouts\images\EMSPortal\icon-warning.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_change.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_error.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_first_page.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_first_page_disabled.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_green_check.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_important.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_info.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_last_page.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_last_page_disabled.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_page_left.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_page_left_disabled.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_page_right.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_page_right_disabled.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_remove.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_sort_ascend.png" />
+    <Content Include="_layouts\images\EMSPortal\icon_sort_descend.png" />
+    <Content Include="_layouts\images\EMSPortal\Lifecycle_Attribute_Index.jpg" />
+    <Content Include="_layouts\images\EMSPortal\lock.png" />
+    <Content Include="_layouts\images\EMSPortal\logo_ems.png" />
+    <Content Include="_layouts\images\EMSPortal\Maturity_Matrix.jpg" />
+    <Content Include="_layouts\images\EMSPortal\Next_CDP.jpg" />
+    <Content Include="_layouts\images\EMSPortal\PMT_View.jpg" />
+    <Content Include="_layouts\images\EMSPortal\pop_up_arrow.png" />
+    <Content Include="_layouts\images\EMSPortal\Project_List.jpg" />
+    <Content Include="_layouts\images\EMSPortal\Requirements_Seperator.jpg" />
+    <Content Include="_layouts\images\EMSPortal\right_arrow_button.png" />
+    <Content Include="_layouts\images\EMSPortal\Risk_Matrix.jpg" />
+    <Content Include="_layouts\images\EMSPortal\Risk_Seperator.jpg" />
+    <Content Include="_layouts\images\EMSPortal\SLB_logo.jpg" />
+    <Content Include="_layouts\images\EMSPortal\spacer.gif" />
+    <Content Include="_layouts\images\EMSPortal\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmspeedContent.ascx.cs">
+      <DependentUpon>EmspeedContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmspeedContent.ascx.designer.cs">
+      <DependentUpon>EmspeedContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EmspeedIncludes.ascx.cs">
+      <DependentUpon>EmspeedIncludes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmspeedIncludes.ascx.designer.cs">
+      <DependentUpon>EmspeedIncludes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="help\help-colors.scss" />
+    <None Include="_layouts\1033\styles\SharePointProjectItem.OmniWorks.spdata" />
+    <None Include="_layouts\1033\styles\SharePointProjectItem.spdata" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\resources\css\_dashboard.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="_layouts\EMSPortal\app\contextcontroller\resources\css\_contextcontroller.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="_layouts\EMSPortal\app\projectheader\resources\css\_projectheader.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="_layouts\EMSPortal\app\dashboard\resources\css\_DashboardPortletDfX.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <None Include="_layouts\EMSPortal\app\reporting\data\getConfiguration.jso" />
+    <None Include="_layouts\EMSPortal\app\reporting\data\masterLayout.jso" />
+    <None Include="_layouts\EMSPortal\app\reporting\data\masterLayout2.jso" />
+    <None Include="_layouts\EMSPortal\app\reporting\data\reportTypes.jso" />
+    <None Include="_layouts\EMSPortal\app\reporting\data\reportTypesError.jso" />
+    <Content Include="_layouts\EMSPortal\app\reporting\resources\css\_reporting.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <None Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\testStatureWebServices.bmk" />
+    <None Include="_layouts\EMSPortal\app\reporting\testStatureWebServices\testStatureWebServices.tst" />
+    <None Include="_layouts\EMSPortal\app\snapshots\data\snapshotsHistory.jso" />
+    <Content Include="_layouts\EMSPortal\theme\sass\emspeed\_emspeed-colors.scss" />
+    <Content Include="_layouts\EMSPortal\theme\sass\emspeed\_emspeed-mixins.scss" />
+    <Content Include="_layouts\EMSPortal\app\project\resources\css\_project.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="_layouts\EMSPortal\theme\sass\emspeed\_emspeed-init.scss" />
+    <Content Include="_layouts\1033\styles\EMSPortal\emspeed-all.scss" />
+    <Content Include="_layouts\EMSPortal\app\dashboard\resources\css\_risk-matrix.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="_layouts\EMSPortal\theme\sass\emspeed\_css-reset.scss" />
+    <None Include="_layouts\EMSPortal\theme\sass\package.json" />
+    <None Include="_layouts\EMSPortal\theme\sass\src\button\Button.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\src\panel\Panel.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\src\Readme.md" />
+    <None Include="_layouts\EMSPortal\theme\sass\src\tab\Bar.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\src\tab\Tab.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\var\button\Button.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\var\Component.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="_layouts\EMSPortal\theme\sass\var\Readme.md" />
+    <None Include="_layouts\images\SharePointProjectItem.OmniWorks.spdata" />
+    <None Include="_layouts\images\SharePointProjectItem.spdata" />
+    <None Include="_layouts\SharePointProjectItem.OmniWorks.spdata" />
+    <None Include="_layouts\SharePointProjectItem.spdata" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_layouts\EMSPortal\app\dashboard\resources\images\" />
+    <Folder Include="_layouts\EMSPortal\app\myprojects\resources\images\" />
+    <Folder Include="_layouts\EMSPortal\app\pmtview\resources\images\" />
+    <Folder Include="_layouts\EMSPortal\app\tabs\resources\images\" />
+    <Folder Include="_layouts\EMSPortal\app\usersinrole\resources\images\" />
+    <Folder Include="_layouts\EMSPortal\theme\sass\etc\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15721</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

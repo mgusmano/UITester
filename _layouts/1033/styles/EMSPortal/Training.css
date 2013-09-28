@@ -1,0 +1,344 @@
+﻿body
+{
+	padding:0px;
+	text-align:center;
+    font-family: verdana, helvetica, arial, sans-serif;
+}
+
+
+
+
+textarea {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 16px;
+   border: 1px solid #aaa;
+   padding: 5px;
+   width: 990px;
+   margin-bottom: 10px;
+   color: #182B2F;
+}
+
+h2
+{
+    color: rgb(0, 54, 103);
+}
+.loading
+{
+    background-image:url('/_layouts/1033/styles/EMSPortal/images/spinner.gif');
+    background-repeat:no-repeat;
+    width:40px;
+}
+#loading_window
+{
+    width:400px;
+    height:400px;
+}
+#container
+{
+	width:980px;
+	margin:0px auto;
+	text-align:left;
+}
+#header
+{
+    clear:both;
+    margin-bottom:30px;
+}
+#slb-header img
+{
+	padding: 6px;
+}
+#slb-header
+{
+	background:#003667;
+	height:40px;
+	vertical-align:middle;
+}
+#empseed-identity
+{
+	margin:10px 10px 10px 10px ;
+    clear:both;
+    width:100%;
+}
+#left-sidebar
+{
+	float:left;
+	xwidth:190px;
+	margin: 0 10px 0 0;
+}
+#left-sidebar span.floatLeft,#left-sidebar #tree
+{
+    float:left;
+}
+#tree
+{
+    margin: 0 10px;
+}
+.dynatree-container
+{
+	xwidth:150px;
+	/*height: 412px;*/
+    overflow:hidden;
+}
+#main_content
+{
+	float:left;
+	xwidth: 780px;
+	padding:0 0 0 10px;
+}
+#projectName
+{
+	font-size: 18px;
+}
+#projectHolder
+{
+	margin: 0 0 40px;
+}
+#empseed-identity .logo img
+{
+    float:left;
+}
+#navBtnHolder
+{
+    float:right;
+}
+#navBtnHolder div
+{
+    float:left;
+}
+#printBtnHolder
+{
+    padding-right:10px;
+}
+#projectName
+{   
+    border:2px solid;
+    color:#2e6e9e;    
+}
+#projectName.projectInputBegin
+{
+    border-color:rgb(0, 54, 103);
+    background:rgb(223, 239, 252) 2px solid;
+    color:#999;    
+}
+#projectName.projectInputBad
+{
+    border-color:Red;
+    background:Rgb(223, 239, 252) 2px solid;
+    color:#2e6e9e;    
+}
+#projectName.projectInputGood
+{
+    border-color:Green;
+    background:rgb(223, 239, 252) 2px solid;
+    color:#2e6e9e;    
+}
+#projectNameLabel
+{
+    font-weight:bold;
+}
+.projectLabelBegin
+{
+    color:#2e6e9e;    
+}
+.projectMoreEdit
+{
+	color: Red;
+}
+.projectFinishedEdit
+{
+	color: Green;
+}
+#sliderHolder
+{
+	clear: both;
+	width: 100%;
+	margin: 40px 0 0 0;
+	height:40px;
+}
+#sliderHolder div
+{
+	float: left;
+}
+#sliderHolder label
+{
+    color: #2e6e9e;
+    font-weight:bold;
+}
+#sliderHolder label, #sliderinput, #sliderCounter
+{
+	margin-right: 15px;
+}
+#sliderCounter
+{
+	padding-bottom: 5px;
+}
+.sliderCounterSlide, .sliderCounterChange
+{
+	float: left;
+	width: 25px;
+	text-align: center;
+	font-size: 24px;
+}
+.sliderCounterSlide
+{
+	background: Yellow;
+}
+.sliderCounterChange
+{
+	background: Green;
+	color: white;
+}
+#message
+{
+	display: table;
+}
+#message_log, #message
+{
+	height:50px;
+	width: 100%;
+}
+#message_log
+{
+	position:absolute;
+	z-index: 20;
+}
+#labelForGrid
+{
+    height:20px;
+    padding:25px 0 5px;
+    width:100%;
+    color: #2e6e9e;
+    font-weight:bold;
+}
+#message
+{
+	display:table-cell; 
+	vertical-align:middle;
+	font-size:25px;
+	color: White;
+}
+#message div
+{
+	padding: 10px 0 0 0;
+}
+
+#window_message
+{
+	display: table;
+}
+#window_message_log
+{
+	margin: -9px 0 15px 0;
+}
+#window_message_log, #message
+{
+	height:50px;
+	width: 100%;
+}
+#window_message
+{
+	display:table-cell; 
+	vertical-align:middle;
+	font-size:25px;
+	color: White;
+}
+#window_message div
+{
+	padding: 10px 0 10px 0;
+}
+
+.error
+{
+	background: #cc0000;    
+}
+.alert
+{
+	background: Green;
+}
+#grid
+{
+	margin: 0 0 20px;
+}
+#window
+{
+	display:none;
+}
+#AliasSearchContainer
+{
+}
+#AliasSearchContainer div
+{
+	width:50%;
+	float:left;
+}
+.show
+{
+	display:block;
+}
+.noShow
+{
+	display:none;
+}
+.ui-autocomplete-loading { 
+	background: white url('/_layouts/images/EMSPortal/ajax-loader-arrows.gif') right center no-repeat; 
+}
+#grid td
+{
+	cursor:pointer;
+	cursor:hand;
+}
+.hover
+{
+    background:#2e6e9e;
+    color:White;
+}
+.questionMark
+{
+    text-align:center;
+	width: 20px;
+	height: 20px;
+	/*color: #cc0000;*/
+	color: #fff;
+	font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	background:url('images/questionBlue.png');
+	/*background:url('images/questionGreen.png');*/
+	background-repeat:no-repeat;
+    vertical-align:top;
+}
+
+.questionMarkHover
+{
+    text-align:center;
+	font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	width: 20px;
+	height: 20px;
+	/*color: #006666;*/
+	color: #fff;
+	cursor:pointer;
+	background:url('images/questionBlue.png');
+	background-repeat:no-repeat;
+	/*background:url('images/questionRed.png');*/
+	cursor:hand;
+    vertical-align:top;
+} 
+.floatRight
+{
+    float:right;
+}
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES`EMSPortal:Training.css;5 */
+/*       1*[1541158] 01-NOV-2011 20:03:32 (GMT) MGusmano */
+/*         "styles files for training page" */
+/*       2*[1541697] 02-NOV-2011 20:19:05 (GMT) MGusmano */
+/*         "changes and file additions for training page" */
+/*       3*[1543333] 07-NOV-2011 22:16:49 (GMT) MGusmano */
+/*         "changes to training page" */
+/*       4*[1545357] 11-NOV-2011 16:51:05 (GMT) MGusmano */
+/*         "provision for training page" */
+/*       5*[1547763] 17-NOV-2011 18:59:19 (GMT) MGusmano */
+/*         "Training files for training vm" */
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES`EMSPortal:Training.css;5 */

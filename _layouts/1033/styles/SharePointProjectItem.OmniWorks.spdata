@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem SupportedDeploymentScopes="Package" SupportedTrustLevels="FullTrust" Type="Microsoft.VisualStudio.SharePoint.MappedFolder" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel"><ProjectItemFolder Target="LAYOUTS\1033\STYLES" Type="TemplateFile"/></ProjectItem>
+<!--+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES:SharePointProjectItem.spdata;3 -->
+<!--       1*[1465063] 23-MAR-2011 20:05:10 (GMT) AMathew -->
+<!--         "Initial version" -->
+<!--       2*[1536486] 20-OCT-2011 15:25:08 (GMT) MGusmano -->
+<!--         "Adding Training Page files" -->
+<!--       3*[1541125] 01-NOV-2011 19:07:49 (GMT) MGusmano -->
+<!--         "More additions for the training page" -->
+<!--+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES:SharePointProjectItem.spdata;3 -->

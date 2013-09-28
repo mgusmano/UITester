@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<script type='text/javascript'>
+    function go() {
+        window.top.postMessage(
+            '{"title":"Requirements","reportType": "Requirements","url":"/interactive/requirements.html?/Reports/Mock-Requirements&contextId=97476"}',
+            '*');
+        return false;
+    }
+
+    function go2() {
+        window.top.postMessage(
+            '{ "title": "Requirements", "reportType": "Requirements", "url": "/interactive/requirements2.html?/Reports/Mock-Requirements&rs:Command=Render&rc:parameters=false&contextId=97476" }',
+            '*');
+        return false;
+    }
+
+
+</script>
+<body>
+<a href="#" onclick='go()'  >Requirement1</a><br />
+<a href="#" onclick='go2()'  >Requirement2</a><br />
+<a href="#" onclick='go()'  >Requirement3</a><br />
+<a href="#" onclick='go()'  >Requirement4</a><br />
+<a href="#" onclick='go()'  >Requirement5</a><br />
+<a href="#" onclick='go()'  >Requirement6</a><br />
+    
+
+</body>
+</html>
+<!--+- OmniWorks Replacement History - EPort`src`UITester`interactive:PMT.html;3 -->
+<!--       1*[1790293] 16-SEP-2013 21:00:07 (GMT) MGusmano -->
+<!--         "add interactive functionality" -->
+<!--       2*[1791004] 18-SEP-2013 17:53:51 (GMT) AMathew -->
+<!--         "My Test Revision" -->
+<!--       3*[1791040] 18-SEP-2013 20:20:56 (GMT) AMathew -->
+<!--         "My Test Revision" -->
+<!--+- OmniWorks Replacement History - EPort`src`UITester`interactive:PMT.html;3 -->

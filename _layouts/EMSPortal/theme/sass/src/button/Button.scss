@@ -1,0 +1,70 @@
+@include extjs-button-ui(
+    $ui: 'EMSPEED-small',
+
+    $border-radius: 6px 6px 0 0,
+
+    $border-width: 1px 1px 0px 1px,
+
+    $border-color: #FFFFFF,
+    $border-color-over: #6084A8,
+    $border-color-focus: #6084A8,
+    $border-color-pressed: #6084A8,
+    $border-color-disabled: $button-EMSPEED-base-color,
+
+    $padding: 0 0 0 0,
+    $text-padding: null,
+
+    $background-color: #FFFFFF,
+    $background-color-over: #FFFFFF,
+    $background-color-focus: #FFFFFF,
+    $background-color-pressed: $button-EMSPEED-base-color,
+    $background-color-disabled: $button-EMSPEED-base-color,
+
+    $background-gradient: null,
+    $background-gradient-over: null,
+    $background-gradient-focus: null,
+    $background-gradient-pressed: null,
+    $background-gradient-disabled: null,
+
+    $color: #000000,
+    $color-over: $button-EMSPEED-text-color,
+    $color-focus: $button-EMSPEED-text-color,
+    $color-pressed: $button-EMSPEED-text-color,
+    $color-disabled: $button-EMSPEED-text-color,
+
+    $font-size: 16px,
+    $font-size-over: 16px,
+    $font-size-focus: 16px,
+    $font-size-pressed: 16px,
+    $font-size-disabled: 16px,
+
+    $font-weight: bold,
+    $font-weight-over: bold,
+    $font-weight-focus: bold,
+    $font-weight-pressed: bold,
+    $font-weight-disabled: bold,
+
+    $font-family: $button-EMSPEED-font-family !important,
+    $font-family-over: $button-EMSPEED-font-family !important,
+    $font-family-focus: $button-EMSPEED-font-family !important,
+    $font-family-pressed: $button-EMSPEED-font-family !important,
+    $font-family-disabled: $button-EMSPEED-font-family !important,
+
+    $icon-size: null,
+    $glyph-color: red,
+    $glyph-opacity: 1,
+    $arrow-width: null,
+    $arrow-height: null,
+    $split-width: null,
+    $split-height: null,
+    $include-ui-menu-arrows: $button-include-ui-menu-arrows,
+    $include-ui-split-arrows: $button-include-ui-split-arrows,
+    $include-split-noline-arrows: false,
+    $include-split-over-arrows: $button-include-split-over-arrows,
+    $opacity-disabled: 1,
+    $inner-opacity-disabled: 1
+
+
+
+);
+

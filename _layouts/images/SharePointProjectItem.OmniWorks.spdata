@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem SupportedDeploymentScopes="Package" SupportedTrustLevels="FullTrust" Type="Microsoft.VisualStudio.SharePoint.MappedFolder" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel"><ProjectItemFolder Target="Images" Type="TemplateFile"/></ProjectItem>

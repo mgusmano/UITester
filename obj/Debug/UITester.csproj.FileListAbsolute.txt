@@ -1,0 +1,5 @@
+C:\workareas\163\EPort\src\UITester\bin\SLB.EMSPortal.UITester.dll
+C:\workareas\163\EPort\src\UITester\bin\SLB.EMSPortal.UITester.pdb
+C:\workareas\163\EPort\src\UITester\obj\Debug\UITester.csprojResolveAssemblyReference.cache
+C:\workareas\163\EPort\src\UITester\obj\Debug\SLB.EMSPortal.UITester.dll
+C:\workareas\163\EPort\src\UITester\obj\Debug\SLB.EMSPortal.UITester.pdb

@@ -1,0 +1,81 @@
+.project-header {
+	.row {
+		position: relative;
+	}
+	
+	.row:after {
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+		min-width: 870px;
+	}
+
+	.project-title {
+		overflow: hidden;
+		font-size: 140%;
+
+		&.has-parent {
+			background-image: url('/_layouts/EMSPortal/app/projectheader/resources/images/parent-project.png');
+			background-repeat: no-repeat;
+			background-position: left center;
+			padding-left: 7px;
+			margin-left:14px;
+			margin-top: -6px;
+
+			h2 {
+				padding-top: 11px;
+			}
+		}
+	}
+
+	.parent-project {
+		padding: 2px 0;
+		font-size: 130%;
+
+		a{
+			color: #999;
+		}
+
+	}
+
+	.project-last-update {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.label {
+		text-transform: uppercase;
+	}
+
+	.value {
+		font-weight: bold;
+	}
+
+	.show-hide {
+		float: right;
+	}
+
+	.pm-pc {
+		margin-top: 10px;
+	}
+
+	.spacer {
+		display: inline-block;
+		width: 25px;
+	}
+
+	.product-group {
+		border-radius: 12px;
+		background-color: #fff;
+		display: inline-block;
+		padding: 3px 13px;
+		//border: 1px solid;
+		margin-left: 7px;
+		font-size: 14px;
+		color: #999; //#6084a8;
+	}
+	
+}

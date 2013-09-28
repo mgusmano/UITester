@@ -1,0 +1,247 @@
+.emspeed-menuproj {
+  background-color: #6084a8;
+  padding: 0;
+  margin: 0px;
+  list-style: none; 
+}
+.emspeed-menuproj li {
+    border-bottom: 1px dotted #ccc; 
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+	font-size: 16px;
+	font-family: "Univers 57 CondensedLight";
+}
+.emspeed-menuproj li:hover {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+.emspeed-menuproj li a.active {
+    background-color: #d7d7d7; 
+}
+.emspeed-menuproj li:first-child {
+    border-top: 1px dotted #ccc; 
+}
+
+
+.link-class
+{
+	padding: 0px 0 0px 0px;
+	color: White;
+    margin-top: 10px;
+	font-size: 18px;
+	font-family: "Univers 57 CondensedLight";
+}
+
+/* header */
+#slb-header 
+{
+	background-color: #003366;
+	position: relative;
+}
+
+.logo 
+{
+	padding: 5px 0 5px 10px;
+	color: White;
+	margin-top: 0px;
+	font-size: 22px;
+	font-family: "Univers 57 CondensedLight";
+}
+
+
+.slbcolorcell {
+    background-color:#6084a8;
+    color:#ffffff;
+}
+
+table.tableizer-table2 {
+	border: 0px solid #CCC; 
+	font-size: 12px;
+	border-spacing: 6px;
+    border-collapse: separate;
+} 
+.tableizer-table2 td {
+    text-align: center;
+    width:140px;
+    height:25px;
+	padding: 4px;
+	border: 1px solid #ffffff;
+}
+.tableizer-table2 th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
+
+#viewMenu .x-view-over {
+
+    -webkit-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    -moz-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    //font-size: 110%;
+ 
+    
+    color: #0000ff;
+    background-color: #d4d5d6;
+    cursor: pointer;
+    }
+
+#viewMenu .emspeed-item-over {
+    background-color: #d7d7d7; 
+    }
+
+
+
+#viewMenu .vx-item-selected {
+  
+    -webkit-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    -moz-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    //font-size: 110%;
+    
+     
+    //background-color: #ffffff;
+    //color: #0000ff;
+    }
+
+
+
+
+#viewRiskMatrix .x-view-over {
+
+    -webkit-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    -moz-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    //font-size: 110%;
+ 
+    
+    color: #0000ff;
+    background-color: #d4d5d6;
+    cursor: pointer;
+    }
+
+#viewRiskMatrix .x-item-selected {
+  
+    -webkit-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    -moz-box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    box-shadow:  0 0 15px rgba(0, 0, 255, 1);
+    //font-size: 110%;
+    
+     
+    //background-color: #ffffff;
+    //color: #0000ff;
+    }
+
+
+.x-tool-mjg{
+    background-image: url("blah.png") !important;
+}
+
+
+
+.bluecell {
+    background-color:#0000ff;
+    color:#ffffff;
+}
+.greencell {
+    background-color:#00ff00;
+    color:#000000;
+}
+.yellowcell {
+    background-color:#ffff00;
+    color:#000000;
+}
+.redcell {
+    background-color:#ff0000;
+    color:#ffffff;
+}
+.blackcell {
+    background-color:#000000;
+    color:#ffffff;
+}
+
+table.tableizer-table {
+	border: 0px solid #CCC; 
+	font-size: 12px;
+	border-spacing: 6px;
+    border-collapse: separate;
+} 
+.tableizer-table td {
+    text-align: center;
+    width:40px;
+    height:25px;
+	padding: 4px;
+	border: 1px solid #ffffff;
+}
+.tableizer-table th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
+
+
+
+
+#app-header {
+    color: #596F8F;
+    font-size: 22px;
+    font-weight: 200;
+    padding: 8px 15px;
+    text-shadow: 0 1px 0 #fff;
+}
+#app-msg {
+    background: #D1DDEF;
+    border: 1px solid #ACC3E4;
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.x-panel-ghost {
+    z-index: 1;
+}
+.x-border-layout-ct {
+    background: #DFE8F6;
+}
+.x-portal-body {
+    padding: 0 0 0 0;
+}
+.x-portal .x-portal-column {
+    /* columns must have vertical padding to avoid losing dimensions when empty */
+    padding: 8px 8px 0 0;
+}
+.x-portal .x-panel-dd-spacer {
+    border: 2px dashed #99bbe8;
+    background: #f6f6f6;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 10px;
+}
+.x-portlet {
+    margin-bottom:10px;
+    padding: 1px;
+}
+.x-portlet .x-panel-body {
+    background: #fff;
+}
+.portlet-content {
+    padding: 10px;
+    font-size: 11px;
+}
+
+#app-options .portlet-content {
+    padding: 5px;
+    font-size: 12px;
+}
+.settings {
+    background-image:url("../shared/icons/fam/folder_wrench.png");
+}
+.nav {
+    background-image:url("../shared/icons/fam/folder_go.png");
+}
+.info {
+    background-image:url("../shared/icons/fam/information.png");
+}
+

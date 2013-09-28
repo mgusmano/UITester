@@ -1,0 +1,1390 @@
+﻿/* LAYOUT STYLES */
+html,body,h1,h2,h3,h4,h5,h6,ul,li,form,p,dl,dd,dt
+{
+	padding:0px;
+	margin:0px;
+}
+
+body 
+{
+	text-align: center;
+	font-family: Univers 57 condensed !important;   
+	color:#000 !important;
+}
+
+#page 
+{
+	width: 976px;
+	/*border: 1px solid #CCC;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+/* header */
+#slb-header 
+{
+	background-color: #003366;
+	position: relative;
+}
+
+.logo 
+{
+	padding: 2px 0 5px 10px;
+	color: White;
+	margin-top: 8px;
+	font-size: 22px;
+	font-family: Univers 57 CondensedLight;
+}
+
+.slb-search 
+{
+	position:absolute;
+	right: 10px;
+	top: 5px;
+}
+
+#emspeed-header 
+{
+	background-color: #fff;
+}
+
+#empseed-identity 
+{
+	position: relative;
+	height: 70px;
+}
+.empseed-identity 
+{
+	position:absolute;
+	right: 2px;
+	bottom: 16px;
+}
+
+.empseed-identity ul
+{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.empseed-identity ul li
+{
+	display: inline;
+	margin: 0;
+	padding: 0 12px 0 12px;
+	border-left: 1px solid #ccc;
+	color: #036;
+}
+
+.empseed-identity a,
+.empseed-identity a:visited 
+{
+	color: #036
+}
+
+.empseed-identity ul li:first-child 
+{
+	padding: 0;
+	padding: 0 12px 0 0;
+	border-left: none;
+}
+	
+.emspeed-nav 
+{
+	background-color: #003366;
+	padding: 4px 10px;
+}
+.emspeed-nav ul,
+#emspeed-submenu ul 
+{
+	font-size: 11px;
+	letter-spacing: -0.04em;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.emspeed-nav ul li 
+{
+	display: inline;
+	margin: 0;
+	padding: 0 12px 0 12px;
+	border-left: 1px solid #FFF;
+	color: #999;
+	font-weight:bold;
+}
+.emspeed-nav ul li
+{
+	color:#999;
+	text-decoration:none;
+}
+
+.emspeed-nav ul li.active 
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.emspeed-nav ul li a,
+.emspeed-nav ul li a:visited
+{
+	color: #999;
+	text-decoration: none;
+}
+
+.emspeed-nav ul li.active a,
+.emspeed-nav ul li.active a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.emspeed-nav ul li:first-child,
+#emspeed-submenu ul li:first-child,
+.emspeed-thirdmenu ul li:first-child
+{
+	padding: 0;
+	padding: 0 12px 0 0;
+	border-left: none;
+}
+
+#emspeed-submenu 
+{
+	background-color: #fff;
+	border-bottom: 1px solid #036;
+}
+
+#emspeed-submenu ul li 
+{
+	display: inline;
+	margin: 0;
+	padding: 0 12px 0 12px;
+	border-left: 1px solid #036;
+	color: #999;
+}
+
+li.active 
+{
+	color: #003366 !important;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#emspeed-submenu a,
+#emspeed-submenu a:visited 
+{
+	color: #999;
+}
+
+#emspeed-submenu li.active a,
+#emspeed-submenu li.active a:visited 
+{
+	color: #003366 !important;
+	font-weight: bold;
+}
+
+.emspeed-submenu 
+{
+	padding: 4px 10px;
+}
+	  
+.emspeed-thirdmenu 
+{
+	background-color: #fff;
+	font-size: 11px !important;
+	padding: 4px 10px 6px 270px;
+}
+
+.emspeed-thirdmenu ul li 
+{
+	display: inline;
+	margin: 0;
+	padding: 0 12px 0 12px;
+	border-left: 1px solid #036;
+	color: #999;
+}
+
+.emspeed-thirdmenu ul li.active
+{
+	color: #003366 !important;
+	font-weight: bold;
+}
+
+.emspeed-thirdmenu a,
+.emspeed-thirdmenu a:visited 
+{
+	color: #999;
+}
+
+.emspeed-thirdmenu li.active a,
+.emspeed-thirdmenu li.active a:visited 
+{
+	color: #003366 !important;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+
+/* content area */
+#content 
+{
+	position:relative;
+}
+
+/* Link */
+.emspeed-link 
+{
+    color:#003366 !important;
+    text-decoration:underline !important;
+}
+
+.row100 
+{
+	/*border:0px solid #333;*/
+}
+
+.grid 
+{
+	background-color: #ffffff;
+}
+
+.grideven 
+{
+	background-color: #ffffff;
+}
+.clear 
+{
+	line-height: 1px;
+	clear:both;
+}
+
+/*
+.grid:after 
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
+*/
+.colum75 
+{
+	float:left;
+	width: 760px;
+	/*border:0px solid #333;*/
+}
+
+.colum50
+{
+	float:left;
+	width: 480px;
+	/*border: 1px solid #ffffff;*/
+}
+
+
+.colum25
+{
+	float:left;
+	width: 196px;
+	border: 0px solid #CCC;
+}
+
+.project-detail td, .project-detail th
+{
+	border-style: solid;
+	border-width: 1px 1px 0px 0px;
+	border-color: #C0C0C0;
+	border-collapse: collapse;
+	width: 200px;
+	height: 20px;
+}
+
+table.project-detail 
+{
+	border-left:1px solid #c0c0c0;
+	border-bottom:1px solid #c0c0c0;
+	margin-bottom:10px;
+}
+.container {
+	position:relative;
+}
+.role-list {
+	float:left;
+	width:650px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+	position:relative;
+}
+.role-filter {
+	float:left;
+	width: 280px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-left:1px solid #CCC;
+}    
+
+/* footer */
+#footer 
+{
+	background-color: #003366;
+	padding: 5px 10px;
+	color: White;
+}
+
+.s4-trc-container-menu
+{
+	position: relative;
+	z-index: 100000;
+}
+
+.ms-menu-a span
+{
+	color: #003366 !important;
+}
+
+/* COMMON FONT SIZES */
+h1 {font-size: 30px; letter-spacing:-.04em; margin:.15em 0 .3em 0;} 
+h2 {font-size: 24px; letter-spacing:-.04em; margin:.15em 0 .3em 0;}
+h3 {font-size: 18px; letter-spacing:-.03em; margin:.15em 0 .22em 0;}
+h4 {font-size: 15px; letter-spacing:-.02em; margin:.15em 0 .20em 0;}
+h5 {font-size: 13px; line-height: 1.17em;}
+h6 {font-size: 11px;}
+h1, h2 , h3 {font-weight:normal;}
+
+h3.title 
+{
+	color: #003366;
+	border-bottom: 2px solid #003366;
+}
+
+/* ADDED STYLES */
+div.projectList 
+{
+	padding-bottom: 16px;
+	padding-top: 10px;
+	overflow: auto;
+}
+
+div.projectList span 
+{
+	padding-bottom: 3px;
+}
+
+div.metrics
+{
+	width: 974px;
+	background-color: #efefef;
+	border: 1px solid #ddd;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+div.risks 
+{
+	width: 976px;
+	background-color: #fff;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+div.requirements 
+{
+	width: 976px;
+	background-color: #fff;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+div.right50 
+{
+	width: 464px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left50 
+{
+	width: 464px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left25 
+{
+	width: 232px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left35 
+{
+	width: 350px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+div.right40 
+{
+	width: 384px;
+	margin-left: 16px;
+	padding: 0px;
+	float: right;
+}
+
+div.right75 
+{
+	width: 696px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.right65 
+{
+	width: 550px;
+	margin-right: 16px;
+	padding: 0px;
+	float: right;
+}
+
+div.left60 
+{
+	width: 556px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left75 
+{
+	width: 696px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.right25 
+{
+	width: 232px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left66 
+{
+	width: 619px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.right33 
+{
+	width: 309px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.left100 
+{
+	width: 928px;
+	margin-left: 16px;
+	padding: 0px;
+	float: left;
+}
+
+div.metrics h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+div.risks h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+div.requirements h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+/*
+.manage-team-team-member span span 
+{
+	cursor: pointer;
+	color: #003366;
+	text-decoration: underline;
+}
+*/
+
+.ui-menu 
+{
+	text-align: left;
+}
+.ui-autocomplet 
+{
+	cursor: pointer;
+	left:786px;
+}
+
+
+.role-filter ul 
+{
+	list-style: none outside none;
+}
+
+.role-filter li 
+{
+	padding:2px 0;
+}
+
+.role-filter li.align_right 
+{
+	text-align:right;
+}
+
+.right_sec
+{
+	margin-bottom: 16px;
+	width: 295px;
+}
+
+.role-list table 
+{
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.role-list table thead th 
+{
+	background-color: #ccc;
+	color: #000;
+	width: 280px;
+}
+
+.role-list table td
+{
+	width: 280px;
+	line-height: 22px;
+}
+
+
+.default-roles 
+{
+	background-color: #eee;
+}
+
+.manage-team-select 
+{
+	width:295px;
+}
+
+.manageteam h3 
+{
+	color: #036;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	border-bottom: 2px solid #036;
+}
+
+.manageteam h4 
+{
+	color: #036;
+	font-size: 11px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+}
+
+.manageteam h5 
+{
+	color: #000;
+	font-size: 11px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.input-autocomplete 
+{
+	width:290px;
+	border:1px solid #C0C0C0;
+}
+
+.input-autocomplete:hover,
+.input-autocomplete:focus 
+{
+	border:1px solid #003366; 
+	background-color: #CFE7FF;
+}
+
+.imageAlignBottom
+{
+	vertical-align:bottom;
+}
+
+.imageAlignMiddle
+{
+	vertical-align:middle;
+} 
+
+.inputProjectID 
+{
+	width:200px;
+	height:20px;
+} 
+
+hr.hr
+{
+	border-style: solid none solid none;
+	border-width: 1px;
+	border-color: #003366 #FFFFFF #FFFFFF #FFFFFF;
+}
+
+.normal-text 
+{
+	font-size:9pt;
+}
+
+.label 
+{
+	font-size: 9pt;
+	padding:0 0 5px 0;
+}
+
+.success-message 
+{
+	width:180px;
+	padding:4px;
+}
+
+.emspeed-teamsite-input em 
+{
+	color: #555;
+}
+
+.emspeed-teamsite-input h3 
+{
+	color: #036;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.emspeed-teamsite-buttons 
+{
+	margin-top: 10px;
+}
+
+.emspeed-teamsite-messages 
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.emspeed-teamsite-messages img
+{
+	margin-right: 8px;
+}
+
+/* BASELINE */
+.emspeed-addbaseline
+{
+	color: #555;
+}
+
+.emspeed-addbaseline h3 
+{
+	color: #036;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.emspeed-addbaseline .row-projectid span,
+.emspeed-addbaseline .row-name span,
+.emspeed-addbaseline .row-comment span
+{
+	display: inline-block;
+	width: 150px;
+	text-align: left;
+	margin-right: 16px;
+}
+
+.emspeed-addbaseline .row-projectid input 
+{
+	background-color: #eee;
+}
+
+.emspeed-addbaseline .row-projectid,
+.emspeed-addbaseline .row-name,
+.emspeed-addbaseline .row-comment
+{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	width: 500px;
+}
+
+.emspeed-addbaseline .row-buttons 
+{
+	margin-top: 10px;
+}
+
+.emspeed-addbaseline .row-messages 
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.emspeed-addbaseline .row-messages img
+{
+	margin-right: 8px;
+}
+
+.emspeed-loadbaseline
+{
+	color: #555;
+	margin-bottom: 8px;
+}
+
+.emspeed-loadbaseline h3 
+{
+	color: #036;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+.emspeed-loadbaseline th 
+{
+	background-color: #ccc;
+	color: #000;
+}
+
+ul.sub-selection 
+{
+	padding:0 0 0 20px;
+}
+
+/* MY PROJECTS */
+
+div.myprojects 
+{
+	width: 976px;
+	margin-bottom: 16px;
+}
+
+div.myprojects ul li
+{
+	font-size: 11px;
+	color: #999;
+}
+
+div.myprojects h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	font-weight: bold;
+}
+
+.myprojects ul 
+{
+	list-style: disc inside;
+	margin: 8px;
+	padding: 8px;
+	padding-top: 0;
+}
+
+.myprojects th 
+{
+	background-color: #ccc;
+	color: #000;
+}
+
+.ui-autocomplete-loading { background: white url('/_layouts/images/EMSPortal/ajax-loader-arrows.gif') right center no-repeat; }
+
+.status-success
+{
+	color: #000;
+	width:298px;
+	padding:4px;
+	background: white url("/_layouts/images/EMSPortal/icon_green_check.png") left center no-repeat;
+	padding-left: 28px;
+}
+
+.status-error 
+{
+	color:#000;
+	width:298px;
+	padding:4px;
+	background: white url("/_layouts/images/EMSPortal/icon_error.png") left center no-repeat;
+	padding-left: 28px;
+}
+
+.loading 
+{
+	position:absolute;
+	top: 30px;
+	left: 200px;
+	display:none;
+} 
+
+.remove-team-member,
+.change-role 
+{
+	display:none;
+	cursor:pointer;
+}
+
+.myprojects th 
+{
+	background-color: #ccc;
+	color: #000;
+}
+
+/* CLONE PMT */
+div.clonepmt
+{
+	width: 976px;
+	margin-bottom: 16px;
+	color: #555;
+}
+
+div.clonepmt h3
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	font-weight: bold;
+}
+
+div.midline 
+{
+	float: left;
+	margin-right: 8px;
+	margin-left: 8px;
+	border-left: 1px solid #ccc;
+	height: 300px;
+}
+
+div.clonepmt div.left66 
+{
+	margin-right: 7px;
+}
+
+div.clonepmt div.right33 
+{
+	margin-left: 7px;
+}
+
+div.clonepmt h4
+{
+	color: #036;
+	font-size: 11px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+}
+
+.input-blocked
+{
+	background-color: #eee;
+	height: 13px;
+	font-size: 11px;
+	width: 147px;
+}
+
+.clonepmt .row-study span,
+.clonepmt .row-name span,
+.clonepmt .row-comment span
+{
+	display: inline-block;
+	width: 87px;
+	text-align: left;
+	margin-right: 16px;
+	font-size: 11px;
+}
+
+.clonepmt .row-study input 
+{
+	background-color: #eee;
+}
+
+.clonepmt .row-study,
+.clonepmt .row-name,
+.clonepmt .row-comment
+{
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	width: 309px;
+}
+
+.clonepmt .row-buttons 
+{
+	margin-top: 10px;
+}
+
+.clonepmt .row-messages 
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.clonepmt .row-messages img
+{
+	margin-right: 8px;
+}
+
+.clonepmt th 
+{
+	background-color: #ccc;
+	color: #000;
+}
+
+.clonepmt .cloneprogress * 
+{
+	display: inline !important; 
+}
+
+.clonepmt .cloneprogress 
+{
+	display: inline !important;
+}
+
+/* FEEDBACK */
+.feedback 
+{
+    text-align:left;
+    padding:5px 15px;
+}
+
+.feedback p 
+{
+    margin-bottom: 5px;
+}
+
+#feedback-response 
+{
+    text-align:left;
+}
+
+#feedback-response p:last-child 
+{
+    text-align: right;
+}
+#feedback-request select 
+{
+	width:180px;
+}
+
+#feedback-request textarea
+{
+	width:100%;
+}
+
+#feedback-request table th, 
+#feedback-request table td
+{
+    text-align:left;
+    vertical-align:top;
+}
+
+#feedback-errors 
+{
+    border: 2px solid red;
+    padding: 2px 4px;
+    margin-bottom: 10px;    
+}
+#feedback-errors ul
+{
+    padding: 0 5px;
+    list-style-position:inside;
+    color: Red;
+}
+
+#feedback-errors p
+{
+    color:Red;
+}
+
+#feedback-request .feedback-button 
+{
+    text-align:right;
+}
+
+.error-input 
+{
+    border: 2px solid red;
+}
+
+.GridViewStyle
+{    
+    padding: 4px;
+    border:0px;
+}
+
+.GridViewstyle a
+{
+    color: #FFFFFF;
+}
+
+.GridViewHeaderStyle th
+{
+   border:0px;
+}
+
+.GridViewHeaderStyle
+{
+    background-color: #CCC;
+    font-weight: bold;
+    color: black;
+    border:0px;
+}
+
+.GridViewFooterStyle
+{
+    font-weight: bold;
+    color: White;
+    background-color:White;
+    border:0px;
+}
+
+.GridViewRowStyle
+{
+    background-color: #F7F6F3;
+    color: #333333;
+    height:20px;
+}
+
+.GridViewAlternatingRowStyle 
+{
+    background-color: #EEEEEE;
+    height:20px;
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td
+{
+    border:0px;
+}
+
+.GridViewSelectedRowStyle
+{
+    background-color: #E2DED6;
+    font-weight: bold;
+    color: #333333;
+}
+
+.GridViewPagerStyle
+{
+    background-color:White;
+    color:Black;
+    border:0px;
+}
+
+.GridViewPagerStyle table /* to center the paging links*/
+{
+    margin: 0 auto 0 auto;
+    border:0px;
+}
+
+.GridViewPagerStyle td /* to center the paging links*/
+{
+    border:0px;
+}
+
+.Activities h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+
+/* provisioning status */
+td.provStatusPercentage 
+{
+	background-color: #0f0;
+	height: 16px;
+}
+
+td.provStatusSlack 
+{
+	background-color: #fff;
+	height: 16px;
+}
+
+table.provStatusTable 
+{
+	border: 1px solid #555;
+}
+
+div.provStatus 
+{
+	 margin-bottom: 10px;
+	 font-weight: bold;
+}
+
+#changeRoleWindow ul
+{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0 28px 0 28px;
+}
+#changeRoleWindow ul li 
+{
+    text-align: left;
+    padding: 2px 0;
+}
+
+#changeRoleWindow ul li:last-child 
+{
+    text-align: right;
+}
+
+/* Fixes */
+/* needed for centering SharePoint modal dialog box */ 
+.ms-dlgContent
+{
+    position:fixed! important;
+}
+
+/* my tasks */
+.myTasks 
+{
+	width: 944px;
+	margin: auto;
+}
+	
+.myTasks h3 
+{
+	color: #036;
+	font-size: 12px;
+	border-bottom: 2px solid #036;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	font-weight: bold;
+}
+	
+.myTasks th a:link 
+{
+	color: #000 !important;
+}
+	
+.myTasks td a:link 
+{
+	color: #036 !important;
+	text-decoration: underline;
+}
+
+.myTasks td a:visited
+{
+	text-decoration: underline;
+}
+
+.myprojects th a:link 
+{
+	color: #000 !important;
+}
+	
+.myprojects td a:link 
+{
+	color: #036 !important;
+	text-decoration: underline;
+}
+
+.feature-detection-warning
+{
+	background-color: red;
+	color:white;
+	padding:4px 8px;
+	border-radius: 0 0 10px 10px;
+	font-size: 18px;
+}
+
+#NoSl 
+{
+    display:none;
+}
+
+.emspeed-menu {
+  background-color: #f1f1f1;
+  padding: 0;
+  margin: 5px;
+  list-style: none; 
+}
+.emspeed-menu li {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc; 
+    padding: 7px 12px;
+    display: block;
+    cursor: pointer;
+}
+.emspeed-menu li:hover {
+    background-color: #d7d7d7; 
+}
+
+.emspeed-menu li a {
+    padding: 7px 12px;
+    display: block;
+    text-decoration: none; 
+}
+.emspeed-menu li a:hover {
+    background-color: #d7d7d7; 
+}
+.emspeed-menu li a.active {
+    background-color: #d7d7d7; 
+}
+.emspeed-menu li:hover {
+    border-top: 1px solid #d7d7d7; 
+}
+.emspeed-menu li:first-child {
+    border-top: none; 
+}
+.emspeed-menu li:last-child {
+    border-bottom: none; 
+}
+.emspeed-menu li.empty {
+    padding: 7px 12px; 
+}
+
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES`EMSPortal:EMSPortal.css;42 */
+/*       1*[1465063] 23-MAR-2011 20:05:10 (GMT) AMathew */
+/*         "Initial version" */
+/*       2*[1474919] 20-APR-2011 15:51:15 (GMT) MShah23 */
+/*         "Fixing styling on dashboard page." */
+/*       3*[1475010] 20-APR-2011 20:36:47 (GMT) MShah23 */
+/*         "Updating style to make browser safe and fix styling on Maturity Metrics." */
+/*       4*[1475397] 21-APR-2011 16:50:45 (GMT) MShah23 */
+/*         "Updating styling and fixing issue with service base class." */
+/*       5*[1475123] 21-APR-2011 18:15:26 (GMT) AMathew */
+/*         "Manage Team" */
+/*       6*[1476280] 25-APR-2011 20:11:42 (GMT) MShah23 */
+/*         "Updating UI elements." */
+/*       7*[1476348] 25-APR-2011 22:39:37 (GMT) MShah23 */
+/*         "Modified IFrame Styling and plugged in CDP and Detail page links to PDD." */
+/*       8*[1476624] 26-APR-2011 15:28:13 (GMT) AMathew */
+/*         "Added correct images and CSS to align with the wireframe" */
+/*       9*[1476787] 26-APR-2011 21:49:20 (GMT) AMathew */
+/*         "Cleaning up Provision Project" */
+/*      10*[1476807] 27-APR-2011 16:22:12 (GMT) MShah23 */
+/*         "teamsite / nav menu styling and bugfix." */
+/*      11*[1477257] 27-APR-2011 20:45:49 (GMT) MShah23 */
+/*         "adding baseline functionality (service and ui)." */
+/*      12*[1478075] 29-APR-2011 20:47:29 (GMT) AMathew */
+/*         "Remove Team Member feature is added" */
+/*      13*[1479345] 04-MAY-2011 21:30:23 (GMT) MShah23 */
+/*         "menu changes and logo update." */
+/*      14*[1479751] 05-MAY-2011 20:56:59 (GMT) MShah23 */
+/*         "updates to menu, default page, and renaming baseline to snapshot" */
+/*      15*[1480658] 09-MAY-2011 21:29:31 (GMT) AMathew */
+/*         "SWIFT #2559684 - Manage Team - Remove Team Member not complete" */
+/*      16*[1481066] 10-MAY-2011 20:19:18 (GMT) AMathew */
+/*         "Made changes to manage team to align with the wireframe" */
+/*      17*[1481121] 10-MAY-2011 21:51:19 (GMT) MShah23 */
+/*         "adding clone pmt placeholders." */
+/*      18*[1481507] 11-MAY-2011 18:53:19 (GMT) AMathew */
+/*         "Refreshing team member pick list after adding and removing team member" */
+/*      19*[1482049] 12-MAY-2011 21:38:31 (GMT) AMathew */
+/*         "SWIFT #2560976 - Truncated values in the Filter by Name" */
+/*      20*[1482068] 12-MAY-2011 21:53:31 (GMT) MShah23 */
+/*         "updated clone pmt ui." */
+/*      21*[1482467] 13-MAY-2011 19:22:44 (GMT) AMathew */
+/*         "Fixing the truncate issue" */
+/*      22*[1472011] 17-MAY-2011 20:18:23 (GMT) MShah23 */
+/*         "updating clone pmt ui." */
+/*      23*[1481149] 18-MAY-2011 15:44:22 (GMT) MShah23 */
+/*         "updating manage team styling." */
+/*      24*[1484052] 18-MAY-2011 19:26:48 (GMT) MShah23 */
+/*         "updating manage team look and feel and fixing clone pmt issue." */
+/*      25*[1484638] 19-MAY-2011 21:22:20 (GMT) AMathew */
+/*         "Feedback page" */
+/*      26*[1485079] 20-MAY-2011 20:51:25 (GMT) AMathew */
+/*         "Wiring feedback page to use Remedy web service" */
+/*      27*[1486281] 24-MAY-2011 20:22:28 (GMT) JMohan2 */
+/*         "Fix the styling in Activities Page" */
+/*      28*[1484096] 07-JUN-2011 20:59:09 (GMT) MShah23 */
+/*         "provisioning ui updates" */
+/*      29*[1496394] 22-JUN-2011 21:44:32 (GMT) JMohan2 */
+/*         "Navigation menu changes" */
+/*      30*[1496564] 23-JUN-2011 20:17:28 (GMT) JMohan2 */
+/*         "change the font size in the body tag" */
+/*      31*[1501426] 06-JUL-2011 19:48:12 (GMT) AMathew */
+/*         "SWIFT #2571111 - Manage Team: Provide ability to change user role after the fact." */
+/*      32*[1503798] 13-JUL-2011 21:53:29 (GMT) JMohan2 */
+/*         "CSS changes" */
+/*      33*[1504207] 14-JUL-2011 18:42:48 (GMT) AMathew */
+/*         "SP: Project ID should display in the header with the Project Name, PM and PC" */
+/*      34*[1504222] 14-JUL-2011 19:22:08 (GMT) AMathew */
+/*         "Project List update link color" */
+/*      35*[1514583] 17-AUG-2011 14:43:55 (GMT) MShah23 */
+/*         "updates to allow for sorting and paging in myworkspace and mytasks." */
+/*      36*[1522501] 14-SEP-2011 18:47:07 (GMT) MShah23 */
+/*         "tasks  services update due to stature changes." */
+/*      37*[1533993] 13-OCT-2011 14:40:25 (GMT) AMathew */
+/*         "SWIFT #2591089 - Display message on 64 bit browsers for SL" */
+/*      38*[1542205] 04-NOV-2011 15:11:28 (GMT) MShah23 */
+/*         "SWIFT# 2582607 - Adjusting link style on tasks links to make visited links more visible." */
+/*      39*[1680725] 11-OCT-2012 18:58:06 (GMT) JMohan2 */
+/*         "Release 1.02 - Changes related to Activities sections" */
+/*      40*[1737141] 07-MAR-2013 17:07:34 (GMT) MGusmano */
+/*         "fix adding decimal to numeric filter in Client UI" */
+/*      41*[1777304] 24-JUL-2013 18:43:59 (GMT) MGusmano */
+/*         "update error reporting for ClientUI" */
+/*      42*[1778105] 26-JUL-2013 19:23:05 (GMT) AMathew */
+/*         "Project menu removed tables and added ul" */
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`STYLES`EMSPortal:EMSPortal.css;42 */

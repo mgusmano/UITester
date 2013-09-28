@@ -1,0 +1,3 @@
+﻿function getResult1() {
+return [{ "Id": 1, "FiltersAvailableId": 1, "RangeTypeIdSelected": 4, "LowerValueSelected": "9/20/2012", "UpperValueSelected": null, "SingleSelectFilterValueIdSelected": null, "MultiSelectFilterValueIdsSelected": null }, { "Id": 2, "FiltersAvailableId": 2, "RangeTypeIdSelected": null, "LowerValueSelected": null, "UpperValueSelected": null, "SingleSelectFilterValueIdSelected": null, "MultiSelectFilterValueIdsSelected": [1, 2, 4] }, { "Id": 3, "FiltersAvailableId": 3, "RangeTypeIdSelected": null, "LowerValueSelected": null, "UpperValueSelected": null, "SingleSelectFilterValueIdSelected": null, "MultiSelectFilterValueIdsSelected": [3, 4]}]
+}

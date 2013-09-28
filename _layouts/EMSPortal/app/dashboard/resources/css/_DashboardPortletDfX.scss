@@ -1,0 +1,118 @@
+$dfx-bg: #eee;
+$dfx-overall-label: $dfx-bg;
+$dfx-overall-border: 2px solid $dfx-overall-label;
+
+$dfx-next-cdp-bg: #fff; //#eeeeee;
+$dfx-next-cdp-label: #769248; 
+$dfx-next-cdp-complete: $dfx-next-cdp-label;
+$dfx-next-cdp-border: 2px solid $dfx-next-cdp-complete;
+
+
+.dfx {
+	
+	.emspeed-dfx-warning {
+		background-image: url('../../../images/EMSPortal/icon-warning.png');
+		background-repeat: no-repeat;
+		width:24px;
+		height: 19px;
+		cursor:pointer;
+	}
+
+	.dfx-table {
+		border-spacing:0;
+		border-collapse:collapse;
+
+		td div {
+			padding: 4px;
+			height:25px;
+		}
+
+		.dfx-label {
+			text-transform: uppercase;
+			border-bottom: 1px solid #ededed;
+			text-align: center;
+			background-color: #fff;
+			font-size:12px;
+			font-weight: bold
+		}
+	} 
+
+
+	
+	.overall {
+        background-color: $dfx-bg;
+        color: #222;
+		text-align: right;
+    }
+
+	.overall-top {
+		border-top: $dfx-overall-border;
+	}
+
+	.overall-right {
+		border-right: $dfx-overall-border;
+	}
+
+	.overall-left {
+		border-left: $dfx-overall-border;
+	}
+
+	.overall-bottom {
+		border-bottom: $dfx-overall-border;
+	}
+
+	.next-top {
+		border-top: $dfx-next-cdp-border;
+	}
+
+	.next-right {
+		border-right: $dfx-next-cdp-border;
+	}
+
+	.next-left {
+		border-left: $dfx-next-cdp-border;
+	}
+
+	.next-bottom {
+		border-bottom: $dfx-next-cdp-border !important;
+	}
+	
+
+    .next { 
+		background-color: $dfx-next-cdp-bg; //#ABC680;
+		color: #222;
+		text-align:left;
+	}
+
+	.next-label {
+		background-color: $dfx-next-cdp-label;
+		color: #d7d7d7;
+	}
+
+	.next-complete {
+		background-color: $dfx-next-cdp-complete;
+		color: #d7d7d7;
+	}
+
+	.overall-label {
+		background-color: $dfx-overall-label;
+		text-align:left;
+	}
+
+	.overall, .next { 
+		width: 50px;
+	}
+
+    .cdp-readiness {
+		margin-top: 15px;
+
+		.row {
+			padding: 4px 0;
+		}
+
+		.label {
+			font-weight: bold;
+		}
+	}
+
+}

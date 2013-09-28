@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>c:\workareas\163\bin;p:\eport_1.2_163\debug\bin;P:\EPort_1.2_163\source\bin;O:\OmniBsl_261\debug\bin;O:\OmniBsl_261\source\bin;c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0a\Bin\NETFX 4.0 Tools;c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0a\Bin;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\lib;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14;c:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies;C:\Windows\Microsoft.NET\Framework\v1.1.4322;C:\Program Files (x86)\Microsoft Enterprise Library 5.0\Bin\;C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies;C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI;C:\OmniTools\bin;C:\OmniWorks\client\6.8C1672\windows_x86</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|$Platform' ">
+    <StartWorkingDirectory>c:\workareas\163</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|$Platform' ">
+    <StartWorkingDirectory>c:\workareas\163</StartWorkingDirectory>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

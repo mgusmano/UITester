@@ -1,0 +1,16 @@
+/*
+ * GridFilters Styles
+ */
+
+.ux-filtered-column {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ux-gridfilter-text-icon {
+    background-image: url(../images/find.png) !important;
+}
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`Layouts`EMSPortal`common`ux`grid`css:GridFilters.css;1 */
+/*       1*[1781117] 08-AUG-2013 15:55:04 (GMT) MGusmano */
+/*         "adding interactive and us folders in Client UI" */
+/*+- OmniWorks Replacement History - EPort`src`UI`SharePoint`Layouts`EMSPortal`common`ux`grid`css:GridFilters.css;1 */

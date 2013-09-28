@@ -1,0 +1,52 @@
+﻿{
+                                    "project": [
+                                        {
+                                            "projectId": "1",
+                                            "parentId": null,
+                                            "name": "Project 1",
+                                            "index": "0",
+                                            "selected": true,
+                                            "iconCls": "task",
+                                            "expanded": "true",
+                                            "project": [
+                                                {
+                                                    "projectId": "5",
+                                                    "parentId": "1",
+                                                    "name": "Project 5",
+                                                    "index": "0",
+                                                    "selected": true,
+                                                    "iconCls": "task",
+                                                    "leaf": "true"
+                                                }
+                                            ],
+                                            "leaf": "false"
+                                        },
+                                        {
+                                            "projectId": "2",
+                                            "parentId": null,
+                                            "name": "Project 2",
+                                            "index": "1",
+                                            "selected": false,
+                                            "iconCls": "task",
+                                            "leaf": "true"
+                                        },
+                                        {
+                                            "projectId": "3",
+                                            "parentId": null,
+                                            "name": "Project 3",
+                                            "index": "2",
+                                            "selected": false,
+                                            "iconCls": "task",
+                                            "leaf": "true"
+                                        },
+                                        {
+                                            "projectId": "4",
+                                            "parentId": null,
+                                            "name": "Project 4",
+                                            "index": "3",
+                                            "selected": false,
+                                            "iconCls": "task",
+                                            "leaf": "true"
+                                        }
+                                    ]
+                                }

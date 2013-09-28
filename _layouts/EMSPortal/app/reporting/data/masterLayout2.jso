@@ -1,0 +1,2794 @@
+﻿{
+    "Data": {
+        "ReportTypeId": 1,
+        "ContextName": "Project 1",
+        "ContextId": 1,
+        "CurrentReportTypeItemId": 4,
+        "ConfigurationId": 1,
+        "GlobalFiltersAvailable": [
+            {
+                "Id": 1,
+                "FilterTypeId": 6,
+                "Name": "Requirement Risk Score",
+                "LowerBoundary": 1,
+                "UpperBoundary": 10,
+                "PrefixText": null,
+                "Enabled": true,
+                "Columns": null,
+                "FilterValues": null
+            },
+            {
+                "Id": 2,
+                "FilterTypeId": 1,
+                "Name": "Maturity",
+                "LowerBoundary": null,
+                "UpperBoundary": null,
+                "PrefixText": null,
+                "Enabled": true,
+                "Columns": "[40,40,40,40,40]",
+                "FilterValues": [
+                    {
+                        "Id": 1,
+                        "Name": "0",
+                        "Sequence": 1
+                    },
+                    {
+                        "Id": 2,
+                        "Name": "1",
+                        "Sequence": 2
+                    },
+                    {
+                        "Id": 3,
+                        "Name": "2",
+                        "Sequence": 3
+                    },
+                    {
+                        "Id": 4,
+                        "Name": "3",
+                        "Sequence": 4
+                    },
+                    {
+                        "Id": 5,
+                        "Name": "4",
+                        "Sequence": 5
+                    }
+                ]
+            },
+            {
+                "Id": 3,
+                "FilterTypeId": 1,
+                "Name": "RequirementTypeFilter",
+                "LowerBoundary": null,
+                "UpperBoundary": null,
+                "PrefixText": null,
+                "Enabled": true,
+                "Columns": "[200,200,200]",
+                "FilterValues": [
+                    {
+                        "Id": 1,
+                        "Name": "Functional",
+                        "Sequence": 1
+                    },
+                    {
+                        "Id": 2,
+                        "Name": "Reliability",
+                        "Sequence": 2
+                    },
+                    {
+                        "Id": 3,
+                        "Name": "Manufacturability",
+                        "Sequence": 3
+                    },
+                    {
+                        "Id": 4,
+                        "Name": "Usability",
+                        "Sequence": 4
+                    },
+                    {
+                        "Id": 5,
+                        "Name": "Total Cost Of Ownership",
+                        "Sequence": 5
+                    },
+                    {
+                        "Id": 6,
+                        "Name": "Development Time",
+                        "Sequence": 6
+                    },
+                    {
+                        "Id": 7,
+                        "Name": "Development Cost",
+                        "Sequence": 7
+                    },
+                    {
+                        "Id": 8,
+                        "Name": "System Combinability / Compatability with Higher Level, Other Systems",
+                        "Sequence": 8
+                    },
+                    {
+                        "Id": 9,
+                        "Name": "HSE",
+                        "Sequence": 9
+                    },
+                    {
+                        "Id": 10,
+                        "Name": "Other",
+                        "Sequence": 10
+                    }
+                ]
+            },
+            {
+                "Id": 4,
+                "FilterTypeId": 1,
+                "Name": "Prioritization",
+                "LowerBoundary": null,
+                "UpperBoundary": null,
+                "PrefixText": null,
+                "Enabled": true,
+                "Columns": "[250,150,150]",
+                "FilterValues": [
+                    {
+                        "Id": 1,
+                        "Name": "Key Differentiators",
+                        "Sequence": 1
+                    },
+                    {
+                        "Id": 2,
+                        "Name": "Must Have",
+                        "Sequence": 2
+                    },
+                    {
+                        "Id": 3,
+                        "Name": "Performance",
+                        "Sequence": 3
+                    },
+                    {
+                        "Id": 4,
+                        "Name": "Extra Differences or Nice To Have",
+                        "Sequence": 4
+                    },
+                    {
+                        "Id": 5,
+                        "Name": "Indifferent",
+                        "Sequence": 5
+                    },
+                    {
+                        "Id": 6,
+                        "Name": "Blank",
+                        "Sequence": 6
+                    }
+                ]
+            },
+            {
+                "Id": 5,
+                "FilterTypeId": 6,
+                "Name": "Physical Architecture Level",
+                "LowerBoundary": 1,
+                "UpperBoundary": 10,
+                "PrefixText": "1 to ",
+                "Enabled": true,
+                "Columns": null,
+                "FilterValues": null
+            }
+        ],
+        "SectionsAvailable": [
+            {
+                "Id": 1,
+                "Name": "Verification and Validation",
+                "Description": "The purpose of this report is to show a tabular view of all the V&V tests associated associated to a project. V&V stands for Verification and Validation. The report will enable the business to easily view what items are verified and what items are validated. Verification is intended to check that a product, service, or system (or portion thereof, or set thereof) meets a set of initial design requirements, specifications, and regulations.",
+                "Sequence": 1,
+                "SectionFiltersAvailable": [],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 16,
+                        "Name": "Requirement Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 18,
+                                "Name": "Requirement Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 17,
+                        "Name": "Validation Test Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 19,
+                                "Name": "Validation Test Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 18,
+                        "Name": "Physical Architecture Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 20,
+                                "Name": "Physical Architecture Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 19,
+                        "Name": "Specification Group",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 21,
+                                "Name": "Specification Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 20,
+                        "Name": "Verification Test Group",
+                        "Sequence": 5,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 22,
+                                "Name": "Verification Test Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 2,
+                "Name": "Dashboard",
+                "Description": "The dashboard sub report contains a high-level summary with two charts. One of the chart shows a trend of requirements maturity, risk score, and the product maturity index over time. The other chart shows the 5 X 5 risk matrix of Severity (1-5) versus Occurence (1-5). The value add that the Dashboard sub report provides is that it allows the user to export functionality from the User Interface into a print friendly document.",
+                "Sequence": 2,
+                "SectionFiltersAvailable": [],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 21,
+                        "Name": "Detail Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 23,
+                                "Name": "Date Recorded",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 24,
+                                "Name": "Exposure Category Type",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 25,
+                                "Name": "Severity (1-5)",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 26,
+                                "Name": "Occurrence (1-5)",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 27,
+                                "Name": "CDP Type Sequence",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 28,
+                                "Name": "Dfx Type Sequence",
+                                "Sequence": 6
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 3,
+                "Name": "PMT",
+                "Description": "The purpose of this report is to empower business users with a project management tool. The PMT report provides a matrix that allows the user to view three types of risk (Performance, Cost, and TIme) against requirements. Simultaneously, it allows the user to also see any risks associated with a Physical Architecture against Requirements.",
+                "Sequence": 3,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 39,
+                        "FilterTypeId": 1,
+                        "Name": "Requirement Type",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": 3,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Functional",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Reliability",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Manufacturability",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Usability",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Total Cost Of Ownership",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Development Time",
+                                "Sequence": 6
+                            },
+                            {
+                                "Id": 7,
+                                "Name": "Development Cost",
+                                "Sequence": 7
+                            },
+                            {
+                                "Id": 8,
+                                "Name": "System Combinability / Compatability with Higher Level, Other Systems",
+                                "Sequence": 8
+                            },
+                            {
+                                "Id": 9,
+                                "Name": "HSE",
+                                "Sequence": 9
+                            },
+                            {
+                                "Id": 10,
+                                "Name": "Other",
+                                "Sequence": 10
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 40,
+                        "FilterTypeId": 1,
+                        "Name": "Prioritization",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": 4,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Key Differentiators",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Must Have",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Performance",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Extra Differences or Nice To Have",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Indifferent",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Blank",
+                                "Sequence": 6
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 41,
+                        "FilterTypeId": 6,
+                        "Name": "Requirement Max Risk Score",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 25,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 42,
+                        "FilterTypeId": 6,
+                        "Name": "Requirement Max Risk Performance Score",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 43,
+                        "FilterTypeId": 6,
+                        "Name": "Requirement Max Risk Schedule",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 44,
+                        "FilterTypeId": 6,
+                        "Name": "Requirement Max Risk Cost  Score",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 45,
+                        "FilterTypeId": 1,
+                        "Name": "Test Passed",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "True",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "False",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Blank",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 46,
+                        "FilterTypeId": 1,
+                        "Name": "Is Validated",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "True",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "False",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Blank",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 7,
+                        "Name": "Requirement Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 5,
+                                "Name": "Max Risk",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Prioritization Sequence",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 7,
+                                "Name": "Requirement Type Level",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 8,
+                                "Name": "Requirement Sequence",
+                                "Sequence": 4
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 4,
+                "Name": "PTT",
+                "Description": "The purpose of this report is to show a tabular view of physical architectures, devices, and their associated tests in the scope of a project. The benefit to the business is the report enables the viewer to easily track and view the test process and progress from knowing what devices are being tested to viewing what tests have passed and failed.",
+                "Sequence": 4,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 47,
+                        "FilterTypeId": 5,
+                        "Name": "Physical Architecture",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 10,
+                        "PrefixText": "1 To",
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 48,
+                        "FilterTypeId": 1,
+                        "Name": "DUT Level",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "System",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Assembly",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Sub-Assembly",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Component",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 49,
+                        "FilterTypeId": 1,
+                        "Name": "Test Class",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Experimental",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Verification",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Validation",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 50,
+                        "FilterTypeId": 1,
+                        "Name": "Test Status",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Planned",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Active",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Completed",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Non Value Added",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 51,
+                        "FilterTypeId": 2,
+                        "Name": "Test Pass / Fail",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Pass",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Fail",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Pending Analysis",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Not Applicable",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 52,
+                        "FilterTypeId": 3,
+                        "Name": "Target Completion Date",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 8,
+                        "Name": "Test Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 9,
+                                "Name": "Physical Architecture Level",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 10,
+                                "Name": "Dut Level",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 11,
+                                "Name": "Test Class",
+                                "Sequence": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 9,
+                        "Name": "Test Instance",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 12,
+                                "Name": "ET Number Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 5,
+                "Name": "Opportunity Analysis",
+                "Description": "The purpose of this report is to show a tabular view of all the opportunity analysis assessments associated to a project. An opportunity analysis is a strategy to access potential for an enhancement typically reducing time and cost or increasing revenue.",
+                "Sequence": 5,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 1,
+                        "FilterTypeId": 4,
+                        "Name": "Date",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 2,
+                        "FilterTypeId": 1,
+                        "Name": "Group",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": true
+                    },
+                    {
+                        "Id": 3,
+                        "FilterTypeId": 1,
+                        "Name": "Priority",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 22,
+                        "Name": "Opportunity Analysis Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 29,
+                                "Name": "Opportunity Analysis Item Level",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 23,
+                        "Name": "References Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 30,
+                                "Name": "External Reference Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 6,
+                "Name": "Test Associations",
+                "Description": "Test Associations Report Description",
+                "Sequence": 6,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 53,
+                        "FilterTypeId": 5,
+                        "Name": "Physical Architecture",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 10,
+                        "PrefixText": "1 To",
+                        "Enabled": true,
+                        "GlobalFilterId": 5,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 54,
+                        "FilterTypeId": 1,
+                        "Name": "Test Class",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Experimental",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Verification",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Validation",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 55,
+                        "FilterTypeId": 2,
+                        "Name": "Test Pass / Fail",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Pass",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Fail",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Pending Analysis",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Not Applicable",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 10,
+                        "Name": "Physical Architecture Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 13,
+                                "Name": "Physical Architecture Level",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 11,
+                        "Name": "Device Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 14,
+                                "Name": "Dut Description Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 12,
+                        "Name": "Test Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 15,
+                                "Name": "Test Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 13,
+                        "Name": "Test Instance Group",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 16,
+                                "Name": "ET Number Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 7,
+                "Name": "Risk Register",
+                "Description": "The purpose of this report is to show a tabular view of the specification risk and corrective actions associated with PAE Specification/PAE/Requirement of a given project. The report will enable the business to easily view the risk details associated to any given specification, Physical Architecture Element, requirement as well as the details of the corrective actions that correspond to mitigating risk in the specification. This report will answer the following questions:",
+                "Sequence": 7,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 5,
+                        "FilterTypeId": 6,
+                        "Name": "Severity",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": true
+                    },
+                    {
+                        "Id": 6,
+                        "FilterTypeId": 6,
+                        "Name": "Occurrence",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": true
+                    },
+                    {
+                        "Id": 7,
+                        "FilterTypeId": 6,
+                        "Name": "Risk Score",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": 1,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": true
+                    },
+                    {
+                        "Id": 9,
+                        "FilterTypeId": 2,
+                        "Name": "Physical Architecture Element",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": true
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 14,
+                        "Name": "Risk Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 17,
+                                "Name": "Risk Score",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 15,
+                        "Name": "Physical Architecture Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": []
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 8,
+                "Name": "Requirements",
+                "Description": "Requirement Report Description",
+                "Sequence": 8,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 10,
+                        "FilterTypeId": 1,
+                        "Name": "Requirement Type",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": 3,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Functional",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Reliability",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Manufacturability",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Usability",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Total Cost Of Ownership",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Development Time",
+                                "Sequence": 6
+                            },
+                            {
+                                "Id": 7,
+                                "Name": "Development Cost",
+                                "Sequence": 7
+                            },
+                            {
+                                "Id": 8,
+                                "Name": "System Combinability / Compatability with Higher Level, Other Systems",
+                                "Sequence": 8
+                            },
+                            {
+                                "Id": 9,
+                                "Name": "HSE",
+                                "Sequence": 9
+                            },
+                            {
+                                "Id": 10,
+                                "Name": "Other",
+                                "Sequence": 10
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 11,
+                        "FilterTypeId": 1,
+                        "Name": "Maturity",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": 2,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "0",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "1",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "2",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "3",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "4",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 12,
+                        "FilterTypeId": 1,
+                        "Name": "Locked",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "True",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "False",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Blank",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 13,
+                        "FilterTypeId": 1,
+                        "Name": "Dirty Flag",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "True",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "False",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Blank",
+                                "Sequence": 3
+                            }
+                        ],
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 3,
+                        "Name": "Requirement Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 1,
+                                "Name": "Priority",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 4,
+                        "Name": "Validation Test Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 2,
+                                "Name": "Validation Test Sequence",
+                                "Sequence": 2
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 5,
+                        "Name": "Opportunity Analysis Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 3,
+                                "Name": "Opportunity Analysis Sequence",
+                                "Sequence": 3
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 6,
+                        "Name": "References Group",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 4,
+                                "Name": "External Reference Sequence",
+                                "Sequence": 4
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 9,
+                "Name": "FMEA Recommendation",
+                "Description": "FMEA Recommendation Report Description",
+                "Sequence": 9,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 37,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Type",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "No Action Required",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Engineering Actions",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Prognostic Health Management",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Mfg. Controls",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Operational and Maintenance Procedures",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Test",
+                                "Sequence": 6
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 38,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Status",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 24,
+                        "Name": "Topic Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 31,
+                                "Name": "Topic Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 25,
+                        "Name": "Item Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 32,
+                                "Name": "Item Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 26,
+                        "Name": "Failure Mode Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 33,
+                                "Name": "Failure Mode Group Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 27,
+                        "Name": "Failure Effect",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 34,
+                                "Name": "Failure Effect Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 28,
+                        "Name": "Failure Cause",
+                        "Sequence": 5,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 35,
+                                "Name": "Potential Cause RPN",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 29,
+                        "Name": "Action",
+                        "Sequence": 6,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 36,
+                                "Name": "Recommended Action Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 10,
+                "Name": "Dashboard Radar",
+                "Description": "Dashboard Radar Report Description",
+                "Sequence": 10,
+                "SectionFiltersAvailable": [],
+                "SectionSortGroupsAvailable": [],
+                "SectionGroup": null
+            },
+            {
+                "Id": 11,
+                "Name": "PFMEA",
+                "Description": "The purpose of this report is to show a tabular view of all design related FMEA data. FMEA stands for Failure Modes Effects Analysis. More specifically a process FMEA is an analytical technique used by a manufacturing engineer or team as a means to assure that to the extent possible, the failure modes and their associated causes / mechanism, caused by process deficiencies, have been addressed.",
+                "Sequence": 11,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 14,
+                        "FilterTypeId": 1,
+                        "Name": "Potential Cause Occurrence",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 15,
+                        "FilterTypeId": 1,
+                        "Name": "Potential Cause Detection",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 16,
+                        "FilterTypeId": 6,
+                        "Name": "Potential Cause RPN",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 125,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 17,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Type",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "No Action Required",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Engineering Actions",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Prognostic Health Management",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Mfg. Controls",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Operational and Maintenance Procedures",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Test",
+                                "Sequence": 6
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 18,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Status",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 19,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Severity",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 20,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Occurrence",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 21,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Detection",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 22,
+                        "FilterTypeId": 6,
+                        "Name": "Residual Risk RPN ",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 125,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 23,
+                        "FilterTypeId": 6,
+                        "Name": "Residual Risk RPN Percent Change",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 30,
+                        "Name": "Topic Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 37,
+                                "Name": "Topic Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 31,
+                        "Name": "Item Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 38,
+                                "Name": "Item Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 32,
+                        "Name": "Failure Mode Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 39,
+                                "Name": "Failure Mode Group Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 33,
+                        "Name": "Failure Effect",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 40,
+                                "Name": "Failure Effect Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 34,
+                        "Name": "Failure Cause",
+                        "Sequence": 5,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 41,
+                                "Name": "Potential Cause RPN",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 35,
+                        "Name": "Action",
+                        "Sequence": 6,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 42,
+                                "Name": "Recommended Action Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 12,
+                "Name": "DFMEA",
+                "Description": "The purpose of this report is to show a tabular view of all design related FMEA data. FMEA stands for Failure Modes Effects Analysis. More specifically a Design FMEA or DFMEA is an analytical technique used by a Design responsible engineer or team as a means to assure that to the extent possible, design failure modes and their associated causes/ mechanism,caused by design deficiencies, have been addressed (quoted from ppt000004).",
+                "Sequence": 12,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 24,
+                        "FilterTypeId": 1,
+                        "Name": "Potential Cause Occurrence",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 25,
+                        "FilterTypeId": 1,
+                        "Name": "Potential Cause Detection",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 26,
+                        "FilterTypeId": 6,
+                        "Name": "Potential Cause RPN",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 125,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 27,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Type",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "No Action Required",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Engineering Actions",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Prognostic Health Management",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Mfg. Controls",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Operational and Maintenance Procedures",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Test",
+                                "Sequence": 6
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 28,
+                        "FilterTypeId": 1,
+                        "Name": "Recommended Action Status",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Completed",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "In Progress",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Cancelled",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Suspended",
+                                "Sequence": 4
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 29,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Severity",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 30,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Occurrence",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 31,
+                        "FilterTypeId": 1,
+                        "Name": "Residual Risk Detection",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "1",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "2",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "3",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "4",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "5",
+                                "Sequence": 5
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 32,
+                        "FilterTypeId": 6,
+                        "Name": "Residual Risk RPN ",
+                        "LowerBoundary": 1,
+                        "UpperBoundary": 125,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 33,
+                        "FilterTypeId": 6,
+                        "Name": "Residual Risk RPN Percent Change",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 36,
+                        "Name": "Topic Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 43,
+                                "Name": "Topic Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 37,
+                        "Name": "Item Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 44,
+                                "Name": "Item Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 38,
+                        "Name": "Failure Mode Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 45,
+                                "Name": "Failure Mode Group Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 39,
+                        "Name": "Failure Effect",
+                        "Sequence": 4,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 46,
+                                "Name": "Failure Effect Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 40,
+                        "Name": "Failure Cause",
+                        "Sequence": 5,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 47,
+                                "Name": "Potential Cause RPN",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 41,
+                        "Name": "Action",
+                        "Sequence": 6,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 48,
+                                "Name": "Recommended Action Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            },
+            {
+                "Id": 13,
+                "Name": "Dfx",
+                "Description": "Dfx Checklist Report Description",
+                "Sequence": 13,
+                "SectionFiltersAvailable": [
+                    {
+                        "Id": 34,
+                        "FilterTypeId": 1,
+                        "Name": "Critical Decision Point",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": "[200, 200, 200]",
+                        "FilterValues": [
+                            {
+                                "Id": 1,
+                                "Name": "Project Request",
+                                "Sequence": 1
+                            },
+                            {
+                                "Id": 2,
+                                "Name": "Project Launch",
+                                "Sequence": 2
+                            },
+                            {
+                                "Id": 3,
+                                "Name": "Concurrent Team Launch",
+                                "Sequence": 3
+                            },
+                            {
+                                "Id": 4,
+                                "Name": "Requirement & Concept Review",
+                                "Sequence": 4
+                            },
+                            {
+                                "Id": 5,
+                                "Name": "Requirement & Concept Validation",
+                                "Sequence": 5
+                            },
+                            {
+                                "Id": 6,
+                                "Name": "Realization Strategy Review",
+                                "Sequence": 6
+                            },
+                            {
+                                "Id": 7,
+                                "Name": "Plan of Record Review",
+                                "Sequence": 7
+                            },
+                            {
+                                "Id": 8,
+                                "Name": "Realization Launch",
+                                "Sequence": 8
+                            },
+                            {
+                                "Id": 9,
+                                "Name": "ENP Production Launch",
+                                "Sequence": 9
+                            },
+                            {
+                                "Id": 10,
+                                "Name": "Field Introduction",
+                                "Sequence": 10
+                            },
+                            {
+                                "Id": 11,
+                                "Name": "EPS Production Launch",
+                                "Sequence": 11
+                            },
+                            {
+                                "Id": 12,
+                                "Name": "Product Readiness Review",
+                                "Sequence": 12
+                            },
+                            {
+                                "Id": 13,
+                                "Name": "Business Commercialization",
+                                "Sequence": 13
+                            },
+                            {
+                                "Id": 14,
+                                "Name": "Project Closure",
+                                "Sequence": 14
+                            },
+                            {
+                                "Id": 15,
+                                "Name": "Portfolio Performance",
+                                "Sequence": 15
+                            },
+                            {
+                                "Id": 16,
+                                "Name": "Obsolescence Strategy",
+                                "Sequence": 16
+                            },
+                            {
+                                "Id": 17,
+                                "Name": "End of Production",
+                                "Sequence": 17
+                            },
+                            {
+                                "Id": 18,
+                                "Name": "End of Support",
+                                "Sequence": 18
+                            }
+                        ],
+                        "Visible": false
+                    },
+                    {
+                        "Id": 35,
+                        "FilterTypeId": 6,
+                        "Name": "Score",
+                        "LowerBoundary": 0,
+                        "UpperBoundary": 100,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    },
+                    {
+                        "Id": 36,
+                        "FilterTypeId": 4,
+                        "Name": "Date Recorded",
+                        "LowerBoundary": null,
+                        "UpperBoundary": null,
+                        "PrefixText": null,
+                        "Enabled": true,
+                        "GlobalFilterId": null,
+                        "Columns": null,
+                        "FilterValues": null,
+                        "Visible": false
+                    }
+                ],
+                "SectionSortGroupsAvailable": [
+                    {
+                        "Id": 42,
+                        "Name": "CDP Group",
+                        "Sequence": 1,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 49,
+                                "Name": "CDP Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 43,
+                        "Name": "Deliverable Group",
+                        "Sequence": 2,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 50,
+                                "Name": "Deliverable Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 44,
+                        "Name": "References Group",
+                        "Sequence": 3,
+                        "SortGroupFieldsAvailable": [
+                            {
+                                "Id": 51,
+                                "Name": "External Reference Sequence",
+                                "Sequence": 1
+                            }
+                        ]
+                    }
+                ],
+                "SectionGroup": null
+            }
+        ],
+        "Configurations": [
+            {
+                "Id": 1,
+                "Name": "Test Configuration 1",
+                "ReportTypeId": 1,
+                "IsDefault": true,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 3,
+                "Name": "Test Configuration 3",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 8,
+                "Name": "mjg41",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 9,
+                "Name": "mjg42",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 10,
+                "Name": "mjg43",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 11,
+                "Name": "mjg412",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            },
+            {
+                "Id": 12,
+                "Name": "mjg4121",
+                "ReportTypeId": 1,
+                "IsDefault": false,
+                "GlobalFiltersSelected": null,
+                "SectionsSelected": null
+            }
+        ],
+        "ReportTypeItems": [
+            {
+                "Id": 1,
+                "Name": "Project Request",
+                "Sequence": 1,
+                "RecommendedSectionIds": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "Id": 2,
+                "Name": "Project Launch",
+                "Sequence": 2,
+                "RecommendedSectionIds": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "Id": 3,
+                "Name": "Concurrent Team Launch",
+                "Sequence": 3,
+                "RecommendedSectionIds": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "Id": 4,
+                "Name": "Requirement & Concept Review",
+                "Sequence": 4,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 5,
+                "Name": "Requirement & Concept Validation",
+                "Sequence": 5,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 6,
+                "Name": "Realization Strategy Review",
+                "Sequence": 6,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 7,
+                "Name": "Plan of Record Review",
+                "Sequence": 7,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 8,
+                "Name": "Realization Launch",
+                "Sequence": 8,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 9,
+                "Name": "ENP Production Launch",
+                "Sequence": 9,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 10,
+                "Name": "Field Introduction",
+                "Sequence": 10,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 11,
+                "Name": "EPS Production Launch",
+                "Sequence": 11,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 12,
+                "Name": "Product Readiness Review",
+                "Sequence": 12,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 13,
+                "Name": "Business Commercialization",
+                "Sequence": 13,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 14,
+                "Name": "Project Closure",
+                "Sequence": 14,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 15,
+                "Name": "Portfolio Performance",
+                "Sequence": 15,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 16,
+                "Name": "Obsolescence Strategy",
+                "Sequence": 16,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 17,
+                "Name": "End of Production",
+                "Sequence": 17,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "Id": 18,
+                "Name": "End of Support",
+                "Sequence": 18,
+                "RecommendedSectionIds": [
+                    1,
+                    2
+                ]
+            }
+        ],
+        "FilterTypes": [
+            {
+                "Id": 3,
+                "Name": "Date"
+            },
+            {
+                "Id": 4,
+                "Name": "Date Range"
+            },
+            {
+                "Id": 1,
+                "Name": "Multi-Select List"
+            },
+            {
+                "Id": 5,
+                "Name": "Numeric"
+            },
+            {
+                "Id": 6,
+                "Name": "Numeric Range"
+            },
+            {
+                "Id": 2,
+                "Name": "Single-Select List"
+            }
+        ],
+        "RangeTypes": [
+            {
+                "Id": 1,
+                "Name": "Less Than <",
+                "Operator": "<",
+                "Sequence": 2
+            },
+            {
+                "Id": 2,
+                "Name": "Less Than or Equal To <=",
+                "Operator": "<=",
+                "Sequence": 4
+            },
+            {
+                "Id": 3,
+                "Name": "Greater Than >",
+                "Operator": ">",
+                "Sequence": 3
+            },
+            {
+                "Id": 4,
+                "Name": "Greater Than or Equal To >=",
+                "Operator": ">=",
+                "Sequence": 5
+            },
+            {
+                "Id": 5,
+                "Name": "In Between ><",
+                "Operator": "><",
+                "Sequence": 6
+            },
+            {
+                "Id": 6,
+                "Name": "Outside Of <>",
+                "Operator": "<>",
+                "Sequence": 7
+            },
+            {
+                "Id": 7,
+                "Name": "Equal To =",
+                "Operator": "=",
+                "Sequence": 1
+            }
+        ],
+        "ArrangementTypes": [
+            {
+                "Id": 1,
+                "Name": "Ascending",
+                "Sequence": 1
+            },
+            {
+                "Id": 2,
+                "Name": "Descending",
+                "Sequence": 2
+            }
+        ],
+        "FileFormats": [
+            {
+                "Id": 1,
+                "Name": "PDF",
+                "Sequence": 1,
+                "MimeType": "application/pdf"
+            },
+            {
+                "Id": 3,
+                "Name": "Excel",
+                "Sequence": 2,
+                "MimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            },
+            {
+                "Id": 4,
+                "Name": "Web Archive",
+                "Sequence": 3,
+                "MimeType": "message/rfc822"
+            }
+        ]
+    },
+    "FaultMessage": null,
+    "Status": 200,
+    "UserMessage": null
+}

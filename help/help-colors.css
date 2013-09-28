@@ -1,0 +1,116 @@
+body {
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 0.78em; }
+
+.color-emspeed-blue div {
+  width: 25px;
+  height: 25px;
+  background-color: #5f86af; }
+.color-emspeed-blue .color-name:after {
+  content: "#5f86af"; }
+.color-emspeed-blue .sass-name:after {
+  content: "$color-emspeed-blue"; }
+
+.color-emspeed-light-blue div {
+  width: 25px;
+  height: 25px;
+  background-color: #eaf1f9; }
+.color-emspeed-light-blue .color-name:after {
+  content: "#eaf1f9"; }
+.color-emspeed-light-blue .sass-name:after {
+  content: "$color-emspeed-light-blue"; }
+
+.color-emspeed-project-header-border div {
+  width: 25px;
+  height: 25px;
+  background-color: #4b84c2; }
+.color-emspeed-project-header-border .color-name:after {
+  content: "#4b84c2"; }
+.color-emspeed-project-header-border .sass-name:after {
+  content: "$color-emspeed-project-header-border"; }
+
+.color-emspeed-project-header-top div {
+  width: 25px;
+  height: 25px;
+  background-color: #eeeeee; }
+.color-emspeed-project-header-top .color-name:after {
+  content: "#eeeeee"; }
+.color-emspeed-project-header-top .sass-name:after {
+  content: "$color-emspeed-project-header-top"; }
+
+.color-emspeed-project-header-bottom div {
+  width: 25px;
+  height: 25px;
+  background-color: #e5e5e5; }
+.color-emspeed-project-header-bottom .color-name:after {
+  content: "#e5e5e5"; }
+.color-emspeed-project-header-bottom .sass-name:after {
+  content: "$color-emspeed-project-header-bottom"; }
+
+.color-emspeed-left-menu-bg div {
+  width: 25px;
+  height: 25px;
+  background-color: #f1f1f1; }
+.color-emspeed-left-menu-bg .color-name:after {
+  content: "#f1f1f1"; }
+.color-emspeed-left-menu-bg .sass-name:after {
+  content: "$color-emspeed-left-menu-bg"; }
+
+.color-emspeed-left-menu-text div {
+  width: 25px;
+  height: 25px;
+  background-color: #386a9d; }
+.color-emspeed-left-menu-text .color-name:after {
+  content: "#386a9d"; }
+.color-emspeed-left-menu-text .sass-name:after {
+  content: "$color-emspeed-left-menu-text"; }
+
+.color-emspeed-left-menu-bg div {
+  width: 25px;
+  height: 25px;
+  background-color: #f1f1f1; }
+.color-emspeed-left-menu-bg .color-name:after {
+  content: "#f1f1f1"; }
+.color-emspeed-left-menu-bg .sass-name:after {
+  content: "$color-emspeed-left-menu-bg"; }
+
+.color-emspeed-left-menu-hover div {
+  width: 25px;
+  height: 25px;
+  background-color: #d7d7d7; }
+.color-emspeed-left-menu-hover .color-name:after {
+  content: "#d7d7d7"; }
+.color-emspeed-left-menu-hover .sass-name:after {
+  content: "$color-emspeed-left-menu-hover"; }
+
+.color-emspeed-left-menu-active div {
+  width: 25px;
+  height: 25px;
+  background-color: #d7d7d7; }
+.color-emspeed-left-menu-active .color-name:after {
+  content: "#d7d7d7"; }
+.color-emspeed-left-menu-active .sass-name:after {
+  content: "$color-emspeed-left-menu-active"; }
+
+.emspeed-menu-border-top div {
+  width: 25px;
+  height: 25px;
+  background-color: 1px solid white; }
+.emspeed-menu-border-top .color-name:after {
+  content: "1px solid white"; }
+.emspeed-menu-border-top .sass-name:after {
+  content: "$emspeed-menu-border-top"; }
+
+.emspeed-menu-border-bottom div {
+  width: 25px;
+  height: 25px;
+  background-color: 1px solid #cccccc; }
+.emspeed-menu-border-bottom .color-name:after {
+  content: "1px solid #cccccc"; }
+.emspeed-menu-border-bottom .sass-name:after {
+  content: "$emspeed-menu-border-bottom"; }
+
+/*+- OmniWorks Replacement History - EPort`src`UITester`help:help-colors.css;1 */
+/*       1*[1782669] 15-AUG-2013 18:12:14 (GMT) AMathew */
+/*         "Removing Silverlight web test project" */
+/*+- OmniWorks Replacement History - EPort`src`UITester`help:help-colors.css;1 */
